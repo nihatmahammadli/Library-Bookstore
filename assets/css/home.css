@@ -190,3 +190,15 @@ footer .last-text {
   text-align: center;
   padding-bottom: 20px;
 }
+footer .all-footer .information .footer-nav {
+  display: none;
+}
+footer .last-text-2 {
+  display: none;
+}
+footer .last-text-3 {
+  display: none;
+}
+footer .line-2 {
+  display: none;
+}
