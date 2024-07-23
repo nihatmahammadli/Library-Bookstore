@@ -1,0 +1,65 @@
+@media only screen and (max-width: 767px) {
+    header {
+      width: 757px !important;
+      display: flex;
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+    header nav {
+      display: none;
+    }
+    header .join p {
+      display: none;
+    }
+  
+    header .join svg {
+      width: 40px;
+      height: 40px;
+    }
+    header .logo svg {
+      width: 80px;
+      height: 80px;
+    }
+    header .logo h3 {
+      font-size: 20px !important;
+    }
+    header .logo .line {
+      width: 190px !important;
+    }
+    header .logo p {
+      font-size: 18px !important;
+    }
+    header .join .group {
+      display: block !important;
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    header .elements {
+      text-align: right;
+    }
+    header .elements ul li a {
+      color: #f2f2f2;
+      text-align: right;
+      font-size: 22px;
+      font-family: Montserrat;
+      font-weight: 400;
+      position: fixed;
+      right: 20px;
+      line-height: 196.187%;
+    }
+    header .elements ul {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+    header .elements .close {
+      margin-right: 20px;
+      margin-top: 20px;
+      width: 22px;
+      height: 22px;
+      margin-bottom: 70px;
+    }
+  }
+  
