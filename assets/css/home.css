@@ -107,15 +107,69 @@ header .elements {
   background: rgba(36, 20, 0, 0.9);
 }
 
-/* header bitti  */
+/* ! header bitti  */
 
-/* footer basladi */
+/* ! sec-1 başladı */
+
+.sec-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+  margin: auto;
+  align-items: start;
+  margin-top: 150px;
+  margin-bottom: 300px;
+}
+
+.sec-1 .text-div {
+  margin-top: 8%;
+}
+
+.sec-1 .text-div h1 {
+  color: #241400;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.sec-1 .text-div p {
+  color: #241400;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  width: 370px;
+  margin-bottom: 20px;
+  line-height: 196.187%;
+}
+
+.sec-1 .text-div button {
+  background-color: #e16a00;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 900;
+  border: none;
+  padding: 13px 20px;
+  padding-right: 82px;
+  filter: drop-shadow(0px 7px 35px rgba(214, 100, 0, 0.22));
+  cursor: pointer;
+}
+
+.sec-1 .img-div img {
+  width: 671px;
+  height: 468px;
+  margin-right: -7px;
+}
+
+/* !sec-1 bitti */
+
+/* ! footer basladi */
 
 footer {
   background-color: #391f00;
   padding-top: 40px;
   padding-right: 30px;
-  margin-bottom: 10px;
 }
 footer .all-footer {
   display: flex;
