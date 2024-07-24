@@ -11,7 +11,143 @@
     header .join p {
       display: none;
     }
-  
+    @media only screen and (max-width: 767px) {
+      header {
+        width: 757px !important;
+        display: flex;
+        margin-top: 20px;
+        margin-left: 10px;
+      }
+      header nav {
+        display: none;
+      }
+      header .join p {
+        display: none;
+      }
+    
+      header .join svg {
+        width: 40px;
+        height: 40px;
+      }
+      header .logo svg {
+        width: 80px;
+        height: 80px;
+      }
+      header .logo h3 {
+        font-size: 20px !important;
+      }
+      header .logo .line {
+        width: 190px !important;
+      }
+      header .logo p {
+        font-size: 18px !important;
+      }
+      header .join .group {
+        display: block !important;
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+      header .elements {
+        text-align: right;
+      }
+      header .elements ul li a {
+        color: #f2f2f2;
+        text-align: right;
+        font-size: 22px;
+        font-family: Montserrat;
+        font-weight: 400;
+        position: fixed;
+        right: 20px;
+        line-height: 196.187%;
+      }
+      header .elements ul {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+      }
+      header .elements .close {
+        margin-right: 20px;
+        margin-top: 20px;
+        width: 22px;
+        height: 22px;
+        margin-bottom: 70px;
+      }
+      header .logo .book-store {
+        display: block;
+      }
+      footer {
+        width: 767px !important;
+      }
+      footer .all-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      footer .all-footer .information {
+        display: block;
+      }
+      footer .all-footer .information h3,
+      p {
+        display: none;
+      }
+      footer .all-footer .information .footer-nav {
+        display: block !important;
+        margin-left: 90px;
+      }
+      footer .all-footer .information .footer-nav ul {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        gap: 12px;
+      }
+      footer .all-footer .information .footer-nav a {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 18px;
+        color: #f2f2f2ea;
+      }
+      footer .all-footer .logo-footer .book-store-2 {
+        display: block;
+        font-size: 18px;
+      }
+      footer .all-footer .logo-footer h3 {
+        font-size: 20px;
+        margin-left: 4px;
+      }
+      footer .last-text-2 {
+        display: block !important;
+        margin-left: 4%;
+        color: #ffffffcb;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+      footer .last-text-3 {
+        display: block !important;
+        margin-left: 4%;
+        color: #ffffffcb;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        padding-bottom: 10px;
+      }
+      footer .line-2 {
+        display: block !important;
+        width: 440px;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.59);
+        margin: auto;
+        margin-bottom: 10px;
+        margin-left: 22%;
+      }
+    }
+    
     header .join svg {
       width: 40px;
       height: 40px;

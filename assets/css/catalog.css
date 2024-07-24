@@ -2,13 +2,15 @@
 body {
   background-color: #fffaf5;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 header {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 1240px; */
+  width: 1240px;
   margin: auto;
   margin-top: 25px;
 }
@@ -63,7 +65,7 @@ header nav ul li {
   font-weight: 400;
 }
 
-header nav ul li .catalog {
+header nav ul li .home {
   color: #e16a00;
   font-weight: 700;
   border-bottom: 2px solid #e16a00;
@@ -81,8 +83,8 @@ header .join {
 }
 
 header .join svg {
-  width: 38px;
-  height: 38px;
+  width: 28px;
+  height: 28px;
   cursor: pointer;
 }
 header .join p {
@@ -108,15 +110,177 @@ header .elements {
   background: rgba(36, 20, 0, 0.9);
 }
 
-/* header bitti  */
+/* ! header end  */
 
-/* footer basladi */
+/* ? sec-1 start */
+body {
+  background-color: rgba(255, 250, 245, 1);
+}
+.sect-1 {
+  margin: auto;
+  width:87%;
+  margin-top: 5%;
+  height: 100%;
+}
+.head-sect-1 {
+  display: flex;
+}
+.books-sect-1 {
+  
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  /* justify-content: start; */
+  justify-content: left;
+  margin-top: 3%;
+  /* overflow: hidden !important;  */
+  /* Taşma durumunda kaydırmayı gizler */
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Taşma durumunda kaydırmayı gizler */
+display:flex;
+height: 700px;
+ 
+}
+.books{
+  width: 98%;
+  height: 680px;
+
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-left: 6%;
+  /* overflow-x: scroll; Scroll için */
+  /* scroll-behavior: smooth; Kaydırma animasyonu */
+  display: flex;
+            overflow-x: auto; /* Yatay kaydırmayı etkinleştirir */
+            scroll-behavior: smooth; /* Yumuşak kaydırma */
+}
+.books::-webkit-scrollbar {
+  display: none; /* WebKit tarayıcıları için kaydırma çubuğunu gizle */
+}
+
+.head-sect-1 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  margin-right: 18%;
+  margin-left: 10%;
+}
+.head-sect-1 ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  gap: 29px;
+}
+
+.head-sect-1 ul a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  color: black;
+}
+.book-div {
+  width: 20%;
+  min-width: 17%;
+  height: 600px;
+
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 8px rgba(0.5, 0.5, 0.5, 0.2);
+  /* flex-shrink: 0; */
+  height: 40% !important;
+  /* min-width: 200px; /* Kitapların minimum genişliği */
+  /* margin-right: 16px; Kitaplar arasında boşluk */ 
+}
+.book-div img {
+  width: 65%;
+  margin: 9% 2% 0% 18%;
+}
+.book-div h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  margin: 10% 0 3% 6%;
+}
+.book-div span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  margin-left: 1%;
+}
+.read-more-btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  color: white;
+  background-color: rgba(225, 106, 0, 1);
+  border: none;
+  cursor: pointer;
+  padding: 4% 14%;
+  border-radius: 3px;
+  margin-top: 4%;
+  align-self: center;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 15%;
+}
+.book-inf {
+  margin-left: 15%;
+  align-items: right;
+}
+/*  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.arrow {
+  height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 2em;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px;
+  display: flex !important;
+}
+
+.prev-arrow {
+  padding-right: 0px;
+  display: inline;
+  margin-top: 20%;
+  
+}
+
+.next-arrow {
+  padding-left: 0px;
+}
+
+.left-arrow{
+  display: inline;
+  align-self: flex-start;
+  margin-top: 14%;
+  background-color: rgba(255, 250, 245, 1);
+}
+
+.right-arrow{
+  display: inline;
+  align-self: flex-start;
+  margin-top: 14%;
+}.left-arrow button{
+  background-color: rgba(255, 250, 245, 1);
+}
+.right-arrow button{
+  background-color: rgba(255, 250, 245, 1);
+}
+/* ?sect 1end */
+/* ? footer start */
 
 footer {
   background-color: #391f00;
   padding-top: 40px;
   padding-right: 30px;
-  margin-bottom: 10px;
 }
 footer .all-footer {
   display: flex;
