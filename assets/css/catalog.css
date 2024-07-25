@@ -10,8 +10,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  /* width: 1240px; */
+  /* width: 100%; */
+  width: 1240px;
   margin: auto;
   margin-top: 25px;
 }
@@ -313,6 +313,7 @@ body {
   align-items: center;
   gap: 20px;
   margin-top: 0%;
+  /* margin-left: 75%; */
 }
 .logo-follow h1 {
   color: #241400;

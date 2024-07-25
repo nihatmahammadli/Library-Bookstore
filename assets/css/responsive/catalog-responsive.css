@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 767px) {
   header {
     width: 757px !important;
@@ -64,9 +65,106 @@
   header .logo .book-store {
     display: block;
   }
-
   /* ?header end */
+  .head-sect-1 a {
+    display: block !important;
+    margin-left: 0;
+    padding-left: 0px !important;
+    justify-content: start;
+  }
+  .head-sect-1 ul {
+    margin-left: 0;
+    padding-left: 0px !important;
+    justify-content: start;
+  }
+
+  .sect-1 {
+    width: 95%;
+  }
+  .head-sect-1 {
+    width: 700px;
+    flex-direction: column;
+  }
+
+  .head-sect-1 h2 {
+    font-size: 22px;
+    margin: 0 !important;
+    display: block !important;
+  }
+  .books-sect-1 {
+    width: 700px !important;
+    display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+    margin-left: 10%;
+  }
+  .book-div {
+    min-width: 90%;
+    /* min-height: 950px; */
+    height: 770px !important;
+    margin-left: 5%;
+    /* background-color: aquamarine; */
+  }
+  .head-sect-1 ul a {
+    font-size: 15px;
+    justify-content: center;
+  }
+  .head-sect-1 ul {
+    justify-content: space-between;
+  }
+  .book-inf {
+    flex-direction: column !important;
+    min-width: 50%;
+    margin-left: 0%;
+    box-shadow: none;
+    margin-top: 2%;
+    padding-left: 30%;
+    padding-top: 0;
+  }
+  .read-more-btn {
+    display: block;
+    margin-left: 0%;
+  }
+  .book-div h5 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    margin: 0% 0 3% 6%;
+  }
+  .book-div span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    margin-left: 1%;
+  }
+  .read-more-btn {
+    font-size: 20px;
+  }
+  .right-arrow {
+    display: none;
+  }
+  .left-arrow {
+    display: none;
+  }
+  .book-div img {
+    width: 45%;
+    margin: 10% 2% 0% 27%;
+  }
+  .books {
+    min-height: 800px;
+    height: 730px !important;
+    margin-bottom: 20% !important;
+    background-color: none;
+    gap: 90px;
+  }
+
+  .h2-sect2 {
+    padding-left: 40%;
+    padding-top: 20%;
+    font-size: 28px !important;
+  }
+  /* ?footer start */
   footer {
+    margin-top: 10%;
     width: 767px !important;
   }
   footer .all-footer {
@@ -135,84 +233,12 @@
     margin-bottom: 10px;
     margin-left: 22%;
   }
-  /* section 1 start */
-  body {
-    width: 100%;
+  .logo-follow {
+    margin-top: 60%;
+    margin-left: 77%;
   }
-  .head-sect-1 a {
-    display: block !important;
-    margin-left: 0;
-    padding-left: 0px !important;
-    justify-content: start;
-  }
-  .head-sect-1 ul {
-    margin-left: 0;
-    padding-left: 0px !important;
-    justify-content: start;
-  }
-
-  .sect-1 {
-    /* width: 95%; */
-    width: 100%;
-  }
-  .head-sect-1 {
-    flex-direction: column;
-  }
-  .head-sect-1 h2 {
-    font-size: 22px;
-    margin: 0 !important;
-    display: block !important;
-  }
-  .books-sect-1 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    height: 700px;
-    margin-left: 20%;
-  }
-  .book-div {
-    min-width: 90%;
-    min-height: 550px;
-  }
-  .book-inf {
-    flex-direction: column !important;
-    min-width: 50%;
-    margin-left: 0%;
-    box-shadow: none;
-    /* margin-top: 20%; */
-  }
-  .read-more-btn {
-    display: block;
-    margin-left: 0%;
-  }
-  .book-div h5 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 17px;
-    margin: 0% 0 3% 6%;
-  }
-  .book-div span {
-    font-family: "Montserrat", sans-serif;
-    font-size: 19px;
-    font-weight: 400;
-    margin-left: 1%;
-  }
-  .read-more-btn {
-    font-size: 20px;
-  }
-  .right-arrow {
-    display: none;
-  }
-  .left-arrow {
-    display: none;
-  }
-  .books {
-    height: 600px;
-    width: 100%;
-  }
-  .h2-sect2 {
-    padding-left: 20%;
-  }
-  .sect-5 .logo-follow h1 {
-    font-size: 34px;
+  .logo-follow h1 {
+    width: 400px;
+    margin-left: 10%;
   }
 }
