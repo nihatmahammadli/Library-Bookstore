@@ -19,17 +19,16 @@ header nav ul li .about {
   border-bottom: 2px solid #e16a00;
 }
 
-
 /* main started*/
 
-.container h1{
+.container h1 {
   font-family: Montserrat;
   color: #241400;
   font-weight: 900;
   font-size: 36px;
- margin-bottom: 30px;
+  margin-bottom: 30px;
   margin-top: 70px;
-  margin-left: 150px;
+  margin-left: 136px;
 }
 
 .text-img {
@@ -41,34 +40,36 @@ header nav ul li .about {
 }
 
 .text-img p {
-  width: 45%;
+  width: 46%;
   line-height: 35px;
   font-size: 18px;
   color: #241400;
 }
 
-.text-img img{
+.text-img img {
   width: 35%;
 }
 
-.logo-follow{
+.logo-follow {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   margin-top: 20%;
-  
 }
-.logo-follow h1{
+.logo-follow h1 {
   color: #241400;
   font-family: Montserrat;
   font-size: 25px;
   font-weight: 900;
   line-height: 49.05px;
 }
-.icons{
+.icons {
   display: flex;
   gap: 55px;
   height: 78px;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
+}
+.x-logo {
+  padding-top: 7px;
 }
