@@ -10,7 +10,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1240px;
+  width: 100%;
+  /* width: 1240px; */
   margin: auto;
   margin-top: 25px;
 }
@@ -65,7 +66,7 @@ header nav ul li {
   font-weight: 400;
 }
 
-header nav ul li .home {
+header nav ul li .catalog {
   color: #e16a00;
   font-weight: 700;
   border-bottom: 2px solid #e16a00;
@@ -145,7 +146,7 @@ height: 700px;
 }
 .books{
   width: 98%;
-  height: 680px;
+  height: 100%;
 
   display: flex;
   flex-wrap: nowrap;
@@ -160,7 +161,7 @@ height: 700px;
             scroll-behavior: smooth; /* Yumuşak kaydırma */
 }
 .books::-webkit-scrollbar {
-  display: none; /* WebKit tarayıcıları için kaydırma çubuğunu gizle */
+  display: none;  /* xetti gizle */
 }
 
 .head-sect-1 h2 {
