@@ -166,6 +166,10 @@ header .elements {
   margin-right: -60px;
 }
 
+.sec-1 .img-div .responsive-img {
+  display: none;
+}
+
 /* !sec-1 bitti */
 
 /* ? sec-2 basladi */
