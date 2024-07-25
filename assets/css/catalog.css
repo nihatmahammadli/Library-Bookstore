@@ -10,10 +10,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1350px;
+  width: 1240px;
   margin: auto;
   margin-top: 25px;
-  padding-left: 50px;
 }
 header .logo {
   display: flex;
@@ -111,202 +110,172 @@ header .elements {
   background: rgba(36, 20, 0, 0.9);
 }
 
-/* ! header bitti  */
+/* ! header end  */
 
-/* ? sec-1 başladı */
-
-.sec-1 {
-  display: flex;
-  justify-content: space-between;
-  width: 84%;
+/* ? sec-1 start */
+body {
+  background-color: rgba(255, 250, 245, 1);
+}
+.sect-1 {
   margin: auto;
-  align-items: start;
-  margin-top: 150px;
-  margin-bottom: 80px;
+  width:87%;
+  margin-top: 5%;
+  height: 100%;
 }
-
-.sec-1 .text-div {
-  margin-top: 8%;
-}
-
-.sec-1 .text-div h1 {
-  color: #241400;
-  font-family: Montserrat;
-  font-size: 36px;
-  font-weight: 900;
-  margin-bottom: 10px;
-}
-
-.sec-1 .text-div p {
-  color: #241400;
-  font-family: Montserrat;
-  font-size: 13px;
-  font-weight: 400;
-  width: 370px;
-  margin-bottom: 20px;
-  line-height: 196.187%;
-}
-
-.sec-1 .text-div button {
-  background-color: #e16a00;
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 15px;
-  font-weight: 900;
-  border: none;
-  padding: 13px 20px;
-  padding-right: 82px;
-  filter: drop-shadow(0px 7px 35px rgba(214, 100, 0, 0.22));
-  cursor: pointer;
-}
-
-.sec-1 .img-div img {
-  width: 691px;
-  height: 488px;
-  margin-right: -60px;
-}
-
-/* !sec-1 bitti */
-
-/* ? sec-2 basladi */
-
-.sec-2 h1 {
-  text-align: center;
-  color: #000;
-  font-family: Montserrat;
-  font-size: 25px;
-  font-weight: 900;
-  margin-bottom: 55px;
-}
-
-.sec-2 .containers {
+.head-sect-1 {
   display: flex;
-  justify-content: center;
-  gap: 33px;
-  text-align: center;
 }
-
-.sec-2 .containers div h3 {
+.books-sect-1 {
+  
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  background-color: #fff;
-  width: 242px;
-  height: 76px;
-  box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  color: #241400;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.sec-2 .containers div .last-child {
-  margin-bottom: 0;
-}
-
-/* ! sec-2 bitti */
-
-/* ? sec-3 basladi */
-
-.sec-3 {
-  margin-top: 160px;
-}
-.sec-3 h1 {
-  text-align: center;
-  color: #241400;
-  font-family: Montserrat;
-  font-size: 32px;
-  font-weight: 900;
-}
-
-.sec-3 .all-texts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 90px;
-  margin-top: 50px;
-}
-
-.sec-3 .all-texts div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 25px;
-}
-
-.sec-3 .all-texts div h2 {
-  color: #241400;
-  font-family: Montserrat;
-  font-size: 50px;
-  font-weight: 900;
-}
-
-.sec-3 .all-texts div p {
-  color: #241400;
-  font-family: Montserrat;
-  font-size: 13px;
-  font-weight: 400;
-}
-
-/* ! sec-3 bitti */
-
-/* ? sec-4 basladi */
-
-.sec-4 {
-  margin-top: 200px;
-}
-
-.sec-4 h1 {
-  text-align: center;
-  color: var#241400;
-  font-family: Montserrat;
-  font-size: 25px;
-  font-weight: 900;
-  margin-bottom: 60px;
-}
-
-.sec-4 p {
-  color: #241400;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 196.187%;
-  width: 1145px;
-  margin: auto;
-}
-
-/* ! sec-4 bitti */
-
-.logo-follow {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: nowrap;
   gap: 20px;
-  margin-top: 10%;
-}
-.logo-follow h1 {
-  color: #241400;
-  font-family: Montserrat;
-  font-size: 25px;
-  font-weight: 900;
-  line-height: 49.05px;
-}
-.icons {
+  /* justify-content: start; */
+  justify-content: left;
+  margin-top: 3%;
+  /* overflow: hidden !important;  */
+  /* Taşma durumunda kaydırmayı gizler */
   display: flex;
-  gap: 55px;
-  height: 78px;
-  margin-bottom: 140px;
+  align-items: center;
+  overflow: hidden; /* Taşma durumunda kaydırmayı gizler */
+display:flex;
+height: 700px;
+ 
+}
+.books{
+  width: 98%;
+  height: 680px;
+
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-left: 6%;
+  /* overflow-x: scroll; Scroll için */
+  /* scroll-behavior: smooth; Kaydırma animasyonu */
+  display: flex;
+            overflow-x: auto; /* Yatay kaydırmayı etkinleştirir */
+            scroll-behavior: smooth; /* Yumuşak kaydırma */
+}
+.books::-webkit-scrollbar {
+  display: none; /* WebKit tarayıcıları için kaydırma çubuğunu gizle */
 }
 
-.icons img {
+.head-sect-1 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  margin-right: 18%;
+  margin-left: 10%;
+}
+.head-sect-1 ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  gap: 29px;
+}
+
+.head-sect-1 ul a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  color: black;
+}
+.book-div {
+  width: 20%;
+  min-width: 17%;
+  height: 600px;
+
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 8px rgba(0.5, 0.5, 0.5, 0.2);
+  /* flex-shrink: 0; */
+  height: 40% !important;
+  /* min-width: 200px; /* Kitapların minimum genişliği */
+  /* margin-right: 16px; Kitaplar arasında boşluk */ 
+}
+.book-div img {
+  width: 65%;
+  margin: 9% 2% 0% 18%;
+}
+.book-div h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  margin: 10% 0 3% 6%;
+}
+.book-div span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  margin-left: 1%;
+}
+.read-more-btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  color: white;
+  background-color: rgba(225, 106, 0, 1);
+  border: none;
   cursor: pointer;
+  padding: 4% 14%;
+  border-radius: 3px;
+  margin-top: 4%;
+  align-self: center;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 15%;
+}
+.book-inf {
+  margin-left: 15%;
+  align-items: right;
+}
+/*  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.arrow {
+  height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 2em;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px;
+  display: flex !important;
 }
 
-/* ? footer basladi */
+.prev-arrow {
+  padding-right: 0px;
+  display: inline;
+  margin-top: 20%;
+  
+}
+
+.next-arrow {
+  padding-left: 0px;
+}
+
+.left-arrow{
+  display: inline;
+  align-self: flex-start;
+  margin-top: 14%;
+  background-color: rgba(255, 250, 245, 1);
+}
+
+.right-arrow{
+  display: inline;
+  align-self: flex-start;
+  margin-top: 14%;
+}.left-arrow button{
+  background-color: rgba(255, 250, 245, 1);
+}
+.right-arrow button{
+  background-color: rgba(255, 250, 245, 1);
+}
+/* ?sect 1end */
+/* ? footer start */
 
 footer {
   background-color: #391f00;
