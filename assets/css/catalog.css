@@ -214,6 +214,8 @@ body {
   height: 40% !important;
   /* min-width: 200px; /* Kitapların minimum genişliği */
   /* margin-right: 16px; Kitaplar arasında boşluk */
+  /* min-height: 200px !important; */
+    padding-bottom: 290px;
 }
 .book-div img {
   width: 55%;
@@ -255,8 +257,10 @@ body {
   align-items: right;
   height: 103px;
   /* background-color: rgb(21, 19, 184); */
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  box-shadow: none;
+background-color: none !important;
 }
 /*  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .books {
