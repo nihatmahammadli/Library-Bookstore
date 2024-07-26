@@ -25,3 +25,23 @@ group.addEventListener("click", function () {
     }
   });
 });
+
+const joinUs = document.querySelector(".joinUs");
+const joinUsdiv = document.querySelector(".join-us-div");
+const joinUsback = document.querySelector(".join-us-background");
+const joinButton = document.querySelector(".join-button");
+
+joinUs.addEventListener("click", function () {
+  joinUsdiv.style.display = "block";
+  joinUsback.style.display = "block";
+});
+
+joinButton.addEventListener("click", function () {
+  joinUsdiv.style.display = "none";
+  joinUsback.style.display = "none";
+});
+
+joinUsback.addEventListener("click", function () {
+  joinUsdiv.style.display = "none";
+  joinUsback.style.display = "none";
+});
