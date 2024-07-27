@@ -8,17 +8,52 @@ group.addEventListener("click", function () {
   elements.innerHTML = `
   <svg 
   class = "close"
-  xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+  xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 18 18" fill="none">
   <path d="M1 1L17 17M17 1L1 17" stroke="white" stroke-width="2"/>
    </svg>
+        <p>Join us</p>
    <ul class = "nav-responsive">
-          <li><a class="home" href="./Home.html">Home</a></li>
-          <li><a href="">Catalog</a></li>
-          <li><a href="">About Store</a></li>
-          <li><a href="">Contact Us</a></li>
-          <li><a href="">Search</a></li>
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./Catalog.html">Catalog</a></li>
+          <li><a href="./AboutStore.html">About Store</a></li>
+          <li><a href="./ContactUs.html">Contact Us</a></li>
+          <li><a href="./Search.html">Search</a></li>
+          <li ><button class = "resp-join-us">Join Us</button></li>
         </ul>
+
   `;
+
+  document.addEventListener("click", function (event) {
+    if (event.target.classList.contains("resp-join-us")) {
+      elements.innerHTML = `
+      <svg 
+      class = "close"
+      xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 18 18" fill="none">
+      <path d="M1 1L17 17M17 1L1 17" stroke="white" stroke-width="2"/>
+      </svg>
+      <div class="join-us-background-resp"></div>
+      <div class="join-us-div-resp"><div>
+            <h1 class="join-h2-resp">Join Us</h1>
+            <input
+              placeholder="Full Name"
+              class="input-1"
+              type="text"
+              name=""
+              id=""
+            />
+            <input
+              placeholder="Email"
+              class="input-1"
+              type="email"
+              name=""
+              id=""
+            />
+            <button class="join-button-resp">Join</button>
+          </div><div>
+    `;
+    }
+  });
+
   document.addEventListener("click", function (event) {
     if (event.target.classList.contains("close")) {
       elements.style.display = "none";
