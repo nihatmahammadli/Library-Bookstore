@@ -1,6 +1,9 @@
 @media only screen and (max-width: 767px) {
+  body {
+    width: 767px !important;
+  }
   header {
-    width: 757px !important;
+    width: 767px !important;
     display: flex;
     margin-top: 20px;
     margin-left: 10px;
@@ -238,9 +241,55 @@
     top: 437px;
   }
   .join-us-div-resp {
-    width: 670px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     background-color: white;
-    margin-left: 50px;
+    margin-left: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .join-us-div-resp input {
+    font-family: "Crimson Text";
+    color: #797667;
+    font-weight: 400;
+    font-size: 30px;
+    width: 462.6px;
+    height: 79.232px;
+    border: 1px solid #cecece;
+    background: #fff;
+    padding-left: 30px;
+    outline: none;
+    margin-bottom: 50px;
+  }
+  .join-us-div-resp h1 {
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .join-us-div-resp .innput-2 {
+    display: block;
+  }
+  .join-us-div-resp .join-button-resp {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    background: #e16a00;
+    color: #fff;
+    text-align: center;
+    font-family: "Crimson Text";
+    font-size: 30px;
+    font-weight: 700;
+    width: 463px;
+    outline: none;
+    height: 70px;
+    margin-top: 20px;
+    cursor: pointer;
   }
 }

@@ -13,11 +13,11 @@ group.addEventListener("click", function () {
    </svg>
         <p>Join us</p>
    <ul class = "nav-responsive">
-          <li><a href="./Home.html">Home</a></li>
-          <li><a href="./Catalog.html">Catalog</a></li>
-          <li><a href="./AboutStore.html">About Store</a></li>
-          <li><a href="./ContactUs.html">Contact Us</a></li>
-          <li><a href="./Search.html">Search</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./catalog.html">Catalog</a></li>
+          <li><a href="./aboutStore.html">About Store</a></li>
+          <li><a href="./contactUs.html">Contact Us</a></li>
+          <li><a href="./search.html">Search</a></li>
           <li ><button class = "resp-join-us">Join Us</button></li>
         </ul>
 
@@ -33,23 +33,23 @@ group.addEventListener("click", function () {
       </svg>
       <div class="join-us-background-resp"></div>
       <div class="join-us-div-resp"><div>
-            <h1 class="join-h2-resp">Join Us</h1>
-            <input
-              placeholder="Full Name"
-              class="input-1"
-              type="text"
-              name=""
-              id=""
-            />
-            <input
-              placeholder="Email"
-              class="input-1"
-              type="email"
-              name=""
-              id=""
-            />
-            <button class="join-button-resp">Join</button>
-          </div><div>
+      <h1 class="join-h2-resp">Join Us</h1>
+              <input
+                placeholder="Full Name"
+                class="input-1"
+                type="text"
+                name=""
+                id=""
+              />
+              <input
+                placeholder="Email"
+                class="input-1"
+                type="email"
+                name=""
+                id=""
+              />
+              <button class="join-button-resp">Join</button>
+
     `;
     }
   });
@@ -80,3 +80,5 @@ joinUsback.addEventListener("click", function () {
   joinUsdiv.style.display = "none";
   joinUsback.style.display = "none";
 });
+
+const joinButtonresp = document.querySelector(".join-button-resp");
