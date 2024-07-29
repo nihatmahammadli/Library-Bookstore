@@ -286,6 +286,8 @@
   .head-sect-1 {
     width: 1200px;
   }
+  .book-div{
+padding-bottom: 260px;  }
   /* ?footer start */
   footer {
     margin-top: 10%;
