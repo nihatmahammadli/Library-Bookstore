@@ -2,6 +2,8 @@
 const sendBtn = document.querySelector("#myBtn");
 const myInput = document.querySelector(".myInput");
 const commentsDiv = document.querySelector(".comments");
+const btnBack = document.querySelector(".btnBack");
+
 
 
 document.addEventListener("keydown", function (e) {
@@ -31,3 +33,6 @@ document.addEventListener("keydown", function (e) {
         if (e.key === "Enter") {
             addcomment()    }})
     
+            btnBack.addEventListener("click", function(){
+                window.location.href="Catalog.html"
+            })
