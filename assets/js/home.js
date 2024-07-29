@@ -13,7 +13,7 @@ group.addEventListener("click", function () {
    </svg>
         <p>Join us</p>
    <ul class = "nav-responsive">
-          <li><a href="./home.html">Home</a></li>
+          <li><a href="./index.html">Home</a></li>
           <li><a href="./catalog.html">Catalog</a></li>
           <li><a href="./aboutStore.html">About Store</a></li>
           <li><a href="./contactUs.html">Contact Us</a></li>
