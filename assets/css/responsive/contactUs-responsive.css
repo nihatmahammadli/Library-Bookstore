@@ -24,13 +24,13 @@
     border-radius: 9px;
     border: 2px solid #cecece;
     font-size: 25px;
-    margin-left: 30%;
+    /* margin-left: 30%; */
   }
 
   .inp-submit {
     width: 100%;
     box-sizing: border-box;
-    margin-left: 340px;
+    margin-left: 30px;
   }
   main .container .inp-note {
     display: none;
@@ -38,3 +38,163 @@
 }
 
 /* For Tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    width: 1100px;
+    margin-left: 7%;
+  }
+
+  header ul a {
+    font-size: 20px;
+  }
+  .books-sect-1 {
+    width: 1100px !important;
+    margin-left: 10%;
+  }
+  .book-div {
+    min-height: 200px !important;
+    padding-bottom: 300px;
+  }
+  .head-sect-1 h2 {
+    font-size: 25px;
+  }
+  .sect-1 {
+    width: 100% !important;
+  }
+  .sect-2 {
+    width: 100% !important;
+  }
+  .sect-3 {
+    width: 100% !important;
+  }
+  .book-inf {
+    padding-top: 10%;
+    box-shadow: none;
+    background-color: none !important;
+  }
+  .head-sect-1 ul a {
+    font-size: 18px;
+    justify-content: center;
+  }
+  .head-sect-1 {
+    width: 1200px;
+  }
+  /* main started */
+  main .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main .container h1 {
+    margin-top: 150px;
+    display: flex;
+    font-size: 70px;
+    margin-left: 350px;
+  }
+  main .container .inputs {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+  }
+  main .container .inputs input {
+    width: 900px;
+    height: 80px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 9px;
+    border: 2px solid #cecece;
+    font-size: 25px;
+    margin-left: 20%;
+  }
+
+  .inp-submit {
+    margin-left: 400px;
+    box-sizing: border-box;
+  }
+  main .container .inp-note {
+    display: none;
+  }
+
+  /* ?footer start */
+  footer {
+    margin-top: 10%;
+    width: 1240px !important;
+  }
+  footer .all-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .all-footer .information {
+    display: block;
+  }
+  footer .all-footer .information h3,
+  p {
+    display: none;
+  }
+  footer .all-footer .information .footer-nav {
+    display: block !important;
+    margin-left: 90px;
+  }
+  footer .all-footer .information .footer-nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 12px;
+  }
+  footer .all-footer .information .footer-nav a {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    color: #f2f2f2ea;
+  }
+  footer .all-footer .logo-footer .book-store-2 {
+    display: block;
+    font-size: 18px;
+  }
+  footer .all-footer .logo-footer h3 {
+    font-size: 20px;
+    margin-left: 4px;
+  }
+  footer .last-text-2 {
+    display: block !important;
+    margin-left: 4%;
+    color: #ffffffcb;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  footer .last-text-3 {
+    display: block !important;
+    margin-left: 4%;
+    color: #ffffffcb;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+  footer .line-2 {
+    display: block !important;
+    width: 440px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.59);
+    margin: auto;
+    margin-bottom: 10px;
+    margin-left: 22%;
+  }
+  /* ?section 4 */
+  .logo-follow {
+    margin-top: 10%;
+    margin-left: 20%;
+    padding-left: 30%;
+  }
+  .logo-follow h1 {
+    width: 400px;
+    margin-left: 10%;
+  }
+}
