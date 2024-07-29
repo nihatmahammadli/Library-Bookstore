@@ -1,6 +1,9 @@
 @media only screen and (max-width: 767px) {
+  body {
+    width: 767px !important;
+  }
   header {
-    width: 757px !important;
+    width: 767px !important;
     display: flex;
     margin-top: 20px;
     margin-left: 10px;
@@ -288,8 +291,5 @@
     height: 70px;
     margin-top: 20px;
     cursor: pointer;
-  }
-  main {
-    margin-left: 84%;
   }
 }
