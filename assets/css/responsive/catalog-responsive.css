@@ -79,6 +79,7 @@
 
   .sect-1 {
     width: 95%;
+    margin-top: 17%;
   }
   .head-sect-1 {
     width: 700px;
@@ -98,14 +99,18 @@
     margin-left: 10%;
   }
   .book-div {
-    min-width: 90%;
+    min-width: 70%;
     /* min-height: 950px; */
     height: 770px !important;
     margin-left: 5%;
     /* background-color: aquamarine; */
   }
+  .book-div img{
+width: 80% !important;
+margin: 10% 2% 0% 7%;
+}
   .head-sect-1 ul a {
-    font-size: 15px;
+    font-size: 18px;
     justify-content: center;
   }
   .head-sect-1 ul {
@@ -117,23 +122,28 @@
     margin-left: 0%;
     box-shadow: none;
     margin-top: 2%;
-    padding-left: 30%;
+    padding-left: 11%;
     padding-top: 0;
   }
   .read-more-btn {
     display: block;
     margin-left: 0%;
+    padding: 5% 24%;
+    border-radius: 8px;
+    font-size: 28px !important;
+
+
   }
   .book-div h5 {
     font-family: "Montserrat", sans-serif;
-    font-size: 17px;
-    margin: 0% 0 3% 6%;
+    font-size: 19px;
+    margin: 0% 0 3% 27%;
   }
   .book-div span {
     font-family: "Montserrat", sans-serif;
-    font-size: 19px;
+    font-size: 23px;
     font-weight: 400;
-    margin-left: 1%;
+    margin-left: 15%;
   }
   .read-more-btn {
     font-size: 20px;
@@ -144,10 +154,7 @@
   .left-arrow {
     display: none;
   }
-  .book-div img {
-    width: 45%;
-    margin: 10% 2% 0% 27%;
-  }
+ 
   .books {
     min-height: 800px;
     height: 730px !important;
@@ -157,9 +164,9 @@
   }
 
   .h2-sect2 {
-    padding-left: 40%;
+    padding-left:32%;
     padding-top: 20%;
-    font-size: 28px !important;
+    font-size: 35px !important;
   }
   /* ?footer start */
   footer {
@@ -232,10 +239,11 @@
     margin-bottom: 10px;
     margin-left: 22%;
   }
+
   /* ?section 4 */
   .logo-follow {
     margin-top: 60%;
-    margin-left: 77%;
+    margin-left: 47%;
     padding-left: 30%;
   }
   .logo-follow h1 {
@@ -249,122 +257,123 @@
     width: 1100px;
     margin-left: 7%;
   }
- 
-  header ul a{
+
+  header ul a {
     font-size: 20px;
   }
   .books-sect-1 {
     width: 1100px !important;
     margin-left: 10%;
-   
   }
   .book-div {
     min-height: 200px !important;
     padding-bottom: 300px;
-}
-.head-sect-1 h2 {
-  font-size: 25px;
-}
-.sect-1{
-  width: 100% !important;
-}
-.sect-2{
-  width: 100% !important;
-}
-.sect-3{
-  width: 100% !important;
-}
-.book-inf {
-padding-top: 10%;
-box-shadow: none;
-background-color: none !important;
-}
-.head-sect-1 ul a {
-  font-size: 18px;
-  justify-content: center;
-}
-.head-sect-1{
-  width: 1200px;
-}
- /* ?footer start */
- footer {
-  margin-top: 10%;
-  width: 1240px !important;
-}
-footer .all-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  }
+  .head-sect-1 h2 {
+    font-size: 25px;
+  }
+  .sect-1 {
+    width: 100% !important;
+  }
+  .sect-2 {
+    width: 100% !important;
+  }
+  .sect-3 {
+    width: 100% !important;
+  }
+  .book-inf {
+    padding-top: 10%;
+    box-shadow: none;
+    background-color: none !important;
+  }
+  .head-sect-1 ul a {
+    font-size: 18px;
+    justify-content: center;
+  }
+  .head-sect-1 {
+    width: 1200px;
+  }
+  .book-div{
+padding-bottom: 260px;  }
+  /* ?footer start */
+  footer {
+    margin-top: 10%;
+    width: 1240px !important;
+  }
+  footer .all-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-footer .all-footer .information {
-  display: block;
-}
-footer .all-footer .information h3,
-p {
-  display: none;
-}
-footer .all-footer .information .footer-nav {
-  display: block !important;
-  margin-left: 90px;
-}
-footer .all-footer .information .footer-nav ul {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  gap: 12px;
-}
-footer .all-footer .information .footer-nav a {
-  font-family: Montserrat;
-  font-weight: 400;
-  font-size: 18px;
-  color: #f2f2f2ea;
-}
-footer .all-footer .logo-footer .book-store-2 {
-  display: block;
-  font-size: 18px;
-}
-footer .all-footer .logo-footer h3 {
-  font-size: 20px;
-  margin-left: 4px;
-}
-footer .last-text-2 {
-  display: block !important;
-  margin-left: 4%;
-  color: #ffffffcb;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-footer .last-text-3 {
-  display: block !important;
-  margin-left: 4%;
-  color: #ffffffcb;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 400;
-  padding-bottom: 10px;
-}
-footer .line-2 {
-  display: block !important;
-  width: 440px;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.59);
-  margin: auto;
-  margin-bottom: 10px;
-  margin-left: 22%;
-}
-/* ?section 4 */
-.logo-follow {
-  margin-top: 10%;
-  margin-left: 37%;
-  padding-left: 30%;
-}
-.logo-follow h1 {
-  width: 400px;
-  margin-left: 10%;
-}
+  footer .all-footer .information {
+    display: block;
+  }
+  footer .all-footer .information h3,
+  p {
+    display: none;
+  }
+  footer .all-footer .information .footer-nav {
+    display: block !important;
+    margin-left: 90px;
+  }
+  footer .all-footer .information .footer-nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 12px;
+  }
+  footer .all-footer .information .footer-nav a {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    color: #f2f2f2ea;
+  }
+  footer .all-footer .logo-footer .book-store-2 {
+    display: block;
+    font-size: 18px;
+  }
+  footer .all-footer .logo-footer h3 {
+    font-size: 20px;
+    margin-left: 4px;
+  }
+  footer .last-text-2 {
+    display: block !important;
+    margin-left: 4%;
+    color: #ffffffcb;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  footer .last-text-3 {
+    display: block !important;
+    margin-left: 4%;
+    color: #ffffffcb;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+  footer .line-2 {
+    display: block !important;
+    width: 440px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.59);
+    margin: auto;
+    margin-bottom: 10px;
+    margin-left: 22%;
+  }
+  /* ?section 4 */
+  .logo-follow {
+    margin-top: 10%;
+    margin-left: 40%;
+    padding-left: 30%;
+  }
+  .logo-follow h1 {
+    width: 400px;
+    margin-left: 10%;
+  }
 }

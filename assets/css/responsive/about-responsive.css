@@ -1,39 +1,44 @@
 /* For Mobile  */
 
 @media only screen and (max-width: 767px) {
-  main .container {
-    flex-direction: column;
-    align-items: center;
-  }
-  main .container h1 {
-    margin-top: 150px;
+  main .container .text-img {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column-reverse;
+    margin-left: 0px;
   }
-  main .container .inputs {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 90px;
-  }
-  main .container .inputs input {
-    width: 550px;
-    height: 80px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    border-radius: 9px;
-    border: 2px solid #cecece;
-    font-size: 25px;
-    /* margin-left: 30%; */
+  main .container .text-img p {
+    display: block;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+    /* margin-left: 60px; */
+    margin-bottom: 150px;
+    padding: 0px 10px;
+    box-sizing: border-box;
   }
 
-  .inp-submit {
-    width: 100%;
-    box-sizing: border-box;
-    margin-left: 30px;
+  main .container .text-img img {
+    width: 680px;
+    margin-left: 40px;
+    position: absolute;
+    top: 280px;
   }
-  main .container .inp-note {
-    display: none;
+  .container h1 {
+    font-size: 60px;
+    margin-top: 700px;
+    width: 400px;
+    margin-left: 180px;
+  }
+  .logo-follow h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .logo-follow {
+    width: 700px;
+    margin-left: 35px;
+    margin-bottom: 50px;
   }
 }
 
@@ -81,41 +86,35 @@
     width: 1200px;
   }
   /* main started */
-  main .container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+  main .container .text-img {
+    display: block;
+    /* margin-left: 80px; */
   }
-  main .container h1 {
-    margin-top: 150px;
+  .container h1 {
+    font-size: 60px;
     display: flex;
-    font-size: 70px;
-    margin-left: 350px;
-  }
-  main .container .inputs {
-    flex-direction: column;
     align-items: center;
-    margin-top: 90px;
+    padding-top: 120px;
+    /* margin-left: 180px; */
   }
-  main .container .inputs input {
-    width: 900px;
-    height: 80px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    border-radius: 9px;
-    border: 2px solid #cecece;
-    font-size: 25px;
-    margin-left: 20%;
+  main .container .text-img p {
+    display: block;
+    width: 480px !important;
+    /* text-align: center; */
+    font-size: 30px;
+    line-height: 45px;
+    margin-left: 90px !important;
+    margin-bottom: 150px;
+    padding: 0px 0px;
   }
-
-  .inp-submit {
-    margin-left: 400px;
-    box-sizing: border-box;
+  main .container .text-img img {
+    width: 600px;
+    margin-left: 40px;
+    position: absolute;
+    top: 360px;
+    left: 580px;
   }
-  main .container .inp-note {
-    display: none;
-  }
-
   /* ?footer start */
   footer {
     margin-top: 10%;
@@ -190,7 +189,7 @@
   /* ?section 4 */
   .logo-follow {
     margin-top: 10%;
-    margin-left: 20%;
+    margin-left: 37%;
     padding-left: 30%;
   }
   .logo-follow h1 {
