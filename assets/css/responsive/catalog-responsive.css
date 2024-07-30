@@ -79,6 +79,7 @@
 
   .sect-1 {
     width: 95%;
+    margin-top: 17%;
   }
   .head-sect-1 {
     width: 700px;
@@ -98,14 +99,18 @@
     margin-left: 10%;
   }
   .book-div {
-    min-width: 90%;
+    min-width: 70%;
     /* min-height: 950px; */
     height: 770px !important;
     margin-left: 5%;
     /* background-color: aquamarine; */
   }
+  .book-div img{
+width: 80% !important;
+margin: 10% 2% 0% 7%;
+}
   .head-sect-1 ul a {
-    font-size: 15px;
+    font-size: 18px;
     justify-content: center;
   }
   .head-sect-1 ul {
@@ -117,23 +122,28 @@
     margin-left: 0%;
     box-shadow: none;
     margin-top: 2%;
-    padding-left: 30%;
+    padding-left: 11%;
     padding-top: 0;
   }
   .read-more-btn {
     display: block;
     margin-left: 0%;
+    padding: 5% 24%;
+    border-radius: 8px;
+    font-size: 28px !important;
+
+
   }
   .book-div h5 {
     font-family: "Montserrat", sans-serif;
-    font-size: 17px;
-    margin: 0% 0 3% 6%;
+    font-size: 19px;
+    margin: 0% 0 3% 27%;
   }
   .book-div span {
     font-family: "Montserrat", sans-serif;
-    font-size: 19px;
+    font-size: 23px;
     font-weight: 400;
-    margin-left: 1%;
+    margin-left: 15%;
   }
   .read-more-btn {
     font-size: 20px;
@@ -144,10 +154,7 @@
   .left-arrow {
     display: none;
   }
-  .book-div img {
-    width: 45%;
-    margin: 10% 2% 0% 27%;
-  }
+ 
   .books {
     min-height: 800px;
     height: 730px !important;
@@ -157,9 +164,9 @@
   }
 
   .h2-sect2 {
-    padding-left: 40%;
+    padding-left:32%;
     padding-top: 20%;
-    font-size: 28px !important;
+    font-size: 35px !important;
   }
   /* ?footer start */
   footer {
