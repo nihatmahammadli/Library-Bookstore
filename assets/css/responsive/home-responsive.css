@@ -292,4 +292,38 @@
     margin-top: 20px;
     cursor: pointer;
   }
+  .resp-join-us {
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: 100% !important;
+  }
+  header {
+    width: 90% !important;
+  }
+  main {
+    width: 95% !important;
+    margin: auto;
+  }
+  main .sec-1 .img-div img {
+    width: 500px;
+    height: 400px;
+  }
+  main .sec-4 p {
+    width: 100% !important;
+  }
+  main .sec-3 .all-texts h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+  body {
+    margin-left: 5%;
+  }
 }
