@@ -60,11 +60,12 @@
 /* For Tablet */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  body {
+  body{
     margin: 0;
+    width: 900px !important;
   }
   header {
-    width: 1100px;
+    width: 900px !important;
     margin-left: 7%;
   }
 
@@ -72,7 +73,7 @@
     font-size: 20px;
   }
   .books-sect-1 {
-    width: 1100px !important;
+    width: 900px !important;
     margin-left: 10%;
   }
   .book-div {
@@ -104,41 +105,39 @@
     width: 1200px;
   }
   /* main started */
-  .container {
-    flex-direction: column;
-    justify-content: center;
-    width: 1024px;
-  }
-  .book-section {
-    margin-left: 9%;
-    width: 1024px;
-  }
-  .container .box-2 {
-    padding-right: 100px;
-  }
-  .container .box-2 p {
-    display: block;
-  }
-  .container .box-1 {
-    text-align: center;
-    align-items: center;
-    /* margin-left: 30%; */
-    width: 1024px;
-  }
 
-  .container .box-1 h1 {
-    margin: 60px;
-    font-weight: 900;
-    font-size: 60px;
-  }
-  .container .box-1 .inp-search {
-    height: 80px;
-    width: 800px;
-  }
-  .container .box-1 .inp-submit {
-    height: 80px;
-    width: 800px;
-  }
+.container {
+  flex-direction: column;
+  justify-content: center;
+  width: 900px;
+}
+.book-section {
+  margin-left: 3%;
+  width: 900px;
+}
+.container .box-2 p {
+  display: block;
+}
+.container .box-1 {
+  text-align: center;
+  align-items: center;
+  /* margin-left: 30%; */
+  width: 900px;
+}
+
+.container .box-1 h1 {
+  margin: 60px;
+  font-weight: 900;
+  font-size: 60px;
+}
+.container .box-1 .inp-search {
+  height: 80px;
+  width: 800px;
+}
+.container .box-1 .inp-submit {
+  height: 80px;
+  width: 800px;
+}
   /* ?footer start */
   footer {
     margin-top: 10%;
@@ -212,7 +211,7 @@
   }
   /* ?section 4 */
   .logo-follow {
-    width: 1024px;
+    width: 900px !important;
     padding-left: 22%;
   }
 }
