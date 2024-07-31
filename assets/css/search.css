@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  background-color: #fffaf5 rgb(255, 250, 245);
+}
+
+/* header some changes */
+
+header nav ul li .home {
+  color: #241400;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  border: none;
+}
+
+header nav ul li .search {
+  color: #e16a00;
+  font-weight: 700;
+  border-bottom: 2px solid #e16a00;
+}
+
+/* main started */
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px 70px;
+}
+.container h1 {
+  font-family: Montserrat;
+}
+.container .box-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .box-1 .inp-search {
+  width: 400px;
+  height: 60px;
+  outline: none;
+  border: 1.5px solid #cecece;
+  border-radius: 5px;
+  font-family: Montserrat;
+  padding: 0px 20px;
+}
+.container .box-1 .inp-submit {
+  background-color: #e16a00;
+  border: none;
+  font-family: Crimson Text;
+  font-weight: 400;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 400px;
+  height: 60px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.container .box-2 {
+  background-color: #ffffff;
+  font-family: Montserrat;
+  color: #241400;
+  display: flex;
+  align-items: center;
+  width: 780px;
+  padding: 40px 0px;
+  box-shadow: 2px 5px 10px 1px rgba(94, 93, 93, 0.3);
+  padding-bottom: 120px;
+  margin-top: 70px;
+}
+.container .box-2 p {
+  width: 455px;
+  line-height: 27.47px;
+  font-size: 14px;
+}
+.container .box-2 h5 {
+  color: #241400;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20.31px;
+}
+.container .box-2 h6 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 47.08px;
+}
+.container .box-2 img {
+  width: 38%;
+  height: 300px;
+}
+.book-section {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  margin-top: 60px;
+  cursor: pointer;
+}
+.arrow img {
+  height: 40px;
+}
+.left-arrow {
+  margin-right: 25px;
+}
+.right-arrow {
+  margin-left: 22px;
+}
