@@ -24,7 +24,7 @@ header nav ul li .search {
 .container {
   display: flex;
   justify-content: space-evenly;
-  margin: 100px 70px;
+  margin: 100px 135px;
 }
 .container h1 {
   font-family: Montserrat;
@@ -35,7 +35,7 @@ header nav ul li .search {
   gap: 30px;
 }
 .container .box-1 .inp-search {
-  width: 400px;
+  width: 480px;
   height: 60px;
   outline: none;
   border: 1.5px solid #cecece;
@@ -50,7 +50,7 @@ header nav ul li .search {
   font-weight: 400;
   color: #ffffff;
   border-radius: 5px;
-  width: 400px;
+  width: 480px;
   height: 60px;
   font-size: 25px;
   cursor: pointer;
@@ -90,6 +90,7 @@ header nav ul li .search {
 .book-section {
   display: flex;
   align-items: center;
+  margin-left: 30px;
 }
 
 .arrow {
