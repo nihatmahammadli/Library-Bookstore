@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1350px;
+    width: 1240px;
     margin: auto;
     margin-top: 25px;
     padding-left: 50px;
@@ -63,7 +63,7 @@ body {
     font-weight: 400;
   }
   
-  header nav ul li .home {
+  header nav ul li .aboutPage {
     color: #e16a00;
     font-weight: 700;
     border-bottom: 2px solid #e16a00;
@@ -119,6 +119,7 @@ body {
     display: flex;
     margin: auto;
     margin-left: 10%;
+    margin-top: 8%;
   }
   .aboutBook {
     width: 55%;
@@ -213,6 +214,7 @@ body {
     width: 53px;
     border-radius: 5px;
     border: none;
+    color: white;
   }
   .comments {
     width: 570px;
