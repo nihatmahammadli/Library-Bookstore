@@ -45,8 +45,12 @@
 /* For Tablet */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body{
+    margin: 0;
+    width: 1100px !important;
+  }
   header {
-    width: 1100px;
+    width: 1100px !important;
     margin-left: 7%;
   }
 
@@ -96,7 +100,7 @@
     display: flex;
     align-items: center;
     padding-top: 120px;
-    /* margin-left: 180px; */
+    margin-left: 80px;
   }
   main .container .text-img p {
     display: block;
@@ -104,7 +108,7 @@
     /* text-align: center; */
     font-size: 30px;
     line-height: 45px;
-    margin-left: 90px !important;
+    margin-left: 60px !important;
     margin-bottom: 150px;
     padding: 0px 0px;
   }
@@ -188,12 +192,7 @@
   }
   /* ?section 4 */
   .logo-follow {
-    margin-top: 10%;
-    margin-left: 37%;
-    padding-left: 30%;
-  }
-  .logo-follow h1 {
-    width: 400px;
-    margin-left: 10%;
+    width: 1024px;
+    padding-left: 22%;
   }
 }
