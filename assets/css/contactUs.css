@@ -19,7 +19,7 @@ header nav ul li .contact {
 }
 
 /* main started */
-
+/* 
 .container h1 {
   margin-left: 9.3%;
   color: #333333;
@@ -38,7 +38,6 @@ main .container .inputs {
 main .container .inputs input {
   width: 610px;
   height: 55px;
-  /* padding-left: 20px; */
   padding: 20px;
   font-size: 15px;
   font-family: Crimson Text;
@@ -84,7 +83,85 @@ main .container .inp-submit {
   font-size: 17px;
   margin-top: 30px;
   cursor: pointer;
+} */
+
+main .container h1 {
+  color: #333333;
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 30px;
+  margin-top: 7%;
+  padding-left: 3px;
+  /* margin-bottom: 30px; */
 }
+main .container .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-left: 120px;
+}
+main .container .input-n1 {
+  display: flex;
+ 
+  gap: 28px;
+}
+main .container .input-n1 input {
+  width: 610px;
+  height: 55px;
+  padding: 20px;
+  font-size: 15px;
+  font-family: Crimson Text;
+  outline: none;
+  border: 1px solid #cecece;
+}
+main .container .input-n2 {
+  display: flex;
+
+  gap: 28px;
+}
+main .container .input-n2 input {
+  width: 610px;
+  height: 55px;
+  padding: 20px;
+  font-size: 15px;
+  font-family: Crimson Text;
+  outline: none;
+  border: 1px solid #cecece;
+}
+main .container .inp-note {
+  width: 1248px;
+  height: 110px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  font-family: Crimson Text;
+  /* margin-top: 25px; */
+  border: 1px solid #cecece;
+  outline: none;
+  font-size: 15px;
+}
+main .container .input-n4 {
+  margin-top: 40px;
+  margin-left: 380px;
+}
+main .container .inp-submit {
+  width: 500px;
+  background-color: #e16a00;
+  height: 53px;
+  color: white;
+  border: none;
+  font-family: Crimson Text;
+  font-weight: 400;
+  /* line-height: 38.99px; */
+  font-size: 19px;
+  /* margin-top: 30px; */
+  cursor: pointer;
+}
+
 .logo-follow {
   display: flex;
   flex-direction: column;
