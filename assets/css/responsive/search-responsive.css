@@ -4,7 +4,6 @@
   .container {
     flex-direction: column;
     margin: 0;
-
     /* width: 700px; */
   }
   .container .box-1 h1 {
@@ -14,6 +13,7 @@
   .container .box-1 .inp-search {
     height: 80px;
     width: 500px;
+    font-size: 35px;
   }
   .container .box-1 .inp-submit {
     height: 80px;
@@ -30,11 +30,13 @@
     background-color: transparent;
     padding: 0;
     text-align: center;
+    width: 765px;
   }
   .container .box-2 img {
-    width: 100%;
+    width: 70%;
     height: 600px;
     margin: 90px 0px;
+    padding: 0;
   }
   .container .box-2 p {
     display: block;
@@ -52,9 +54,16 @@
     font-weight: 700;
     line-height: 80px;
   }
+  .book-section{
+    margin-left: 0;
+  }
+  footer{
+    width: 798px !important;
+  }
   .arrow {
     display: none;
   }
+  
 }
 
 /* For Tablet */
@@ -133,6 +142,7 @@
 .container .box-1 .inp-search {
   height: 80px;
   width: 800px;
+  font-size: 30px;
 }
 .container .box-1 .inp-submit {
   height: 80px;

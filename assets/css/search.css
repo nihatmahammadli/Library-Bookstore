@@ -84,8 +84,9 @@ header nav ul li .search {
   line-height: 47.08px;
 }
 .container .box-2 img {
-  width: 38%;
-  height: 300px;
+  width: 35%;
+  height: 250px;
+  padding: 0px 40px;
 }
 .book-section {
   display: flex;
@@ -98,6 +99,7 @@ header nav ul li .search {
   border: none;
   margin-top: 60px;
   cursor: pointer;
+  display: none;
 }
 .arrow img {
   height: 40px;
