@@ -105,10 +105,10 @@
     margin-left: 5%;
     /* background-color: aquamarine; */
   }
-  .book-div img{
-width: 80% !important;
-margin: 10% 2% 0% 7%;
-}
+  .book-div img {
+    width: 80% !important;
+    margin: 10% 2% 0% 7%;
+  }
   .head-sect-1 ul a {
     font-size: 18px;
     justify-content: center;
@@ -131,8 +131,6 @@ margin: 10% 2% 0% 7%;
     padding: 5% 24%;
     border-radius: 8px;
     font-size: 28px !important;
-
-
   }
   .book-div h5 {
     font-family: "Montserrat", sans-serif;
@@ -154,7 +152,7 @@ margin: 10% 2% 0% 7%;
   .left-arrow {
     display: none;
   }
- 
+
   .books {
     min-height: 800px;
     height: 730px !important;
@@ -164,7 +162,7 @@ margin: 10% 2% 0% 7%;
   }
 
   .h2-sect2 {
-    padding-left:32%;
+    padding-left: 32%;
     padding-top: 20%;
     font-size: 35px !important;
   }
@@ -303,8 +301,9 @@ margin: 10% 2% 0% 7%;
   .head-sect-1 {
     width: 1200px;
   }
-  .book-div{
-padding-bottom: 260px;  }
+  .book-div {
+    padding-bottom: 260px;
+  }
   /* ?footer start */
   footer {
     margin-top: 10%;

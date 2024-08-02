@@ -194,10 +194,12 @@ body {
   }
   .myInput {
     width: 500px;
-    height: 43px;
+    height: 50px;
     outline: none;
     border-radius: 5px;
     border: none;
+    padding-top: 4%;
+    padding-bottom: 2%;
     box-shadow: 0 4px 8px rgba(0.5, 0.5, 0.5, 0.2);
 
   }
@@ -211,22 +213,26 @@ body {
   #myBtn {
     background-color: rgba(225, 106, 0, 1);
     height: 1px;
-    width: 53px;
+    width: 50px;
     border-radius: 5px;
     border: none;
     color: white;
-    padding: 4px 0 50px;
+    padding: 1px 0 46px;
     align-self: center;
   }
   #myBtn svg{
     margin-top: 9%;
   }
+  .myinputs{
+    align-items: start;
+  }
   .icon{
-    margin-top: 50% !important;
+    margin-top: 100px;
   }
   .comments {
     width: 570px;
     height: 100%;
+    
   }
   .comment {
     min-width: 180px;
@@ -236,6 +242,7 @@ body {
     margin-bottom: 7%;
     padding: 0% 0 2% 2%;
     box-shadow: 0 4px 8px rgba(0.5, 0.5, 0.5, 0.2);
+    margin-top: 3%;
 
   }
   
@@ -244,7 +251,8 @@ body {
   }
   .comments-div {
     width: 600px;
-    align-items: end !important;
+    align-items: center !important;
+
 
   }
   .sect-2 {
@@ -390,4 +398,17 @@ footer {
   footer .line-2 {
     display: none;
   }
+  .anonim-word {
+    font-size: 14px;
+    margin-left: 1%;
+    /* padding-top: 4%; */
+    margin-top: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .no-text{
+      font-size: 14px;
+      margin-left: 1%;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+    
   
