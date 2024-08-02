@@ -4,17 +4,29 @@
   main .container {
     flex-direction: column;
     align-items: center;
+    margin-left: 0;
   }
   main .container h1 {
     margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 60px;
+    padding-left: 0;
+    margin-left: 0;
   }
   main .container .inputs {
     flex-direction: column;
     align-items: center;
     margin-top: 90px;
+  }
+  main .container .input-n1 {
+    display: flex;
+    flex-direction: column;
+  }
+  main .container .input-n2 {
+    display: flex;
+    flex-direction: column;
   }
   main .container .inputs input {
     width: 550px;
@@ -24,13 +36,16 @@
     border-radius: 9px;
     border: 2px solid #cecece;
     font-size: 25px;
-    /* margin-left: 30%; */
   }
 
   .inp-submit {
     width: 100%;
     box-sizing: border-box;
     margin-left: 30px;
+  }
+  main .container .input-n4 {
+      margin-left: 0px;
+      margin-right: 30px;
   }
   main .container .inp-note {
     display: none;
@@ -67,6 +82,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0;
   }
   main .container h1 {
     margin-top: 150px;
@@ -91,6 +107,17 @@
     font-size: 25px;
     margin-left: 20%;
   }
+  main .container .input-n1 {
+    display: flex;
+    flex-direction: column;
+  }
+  main .container .input-n2 {
+    display: flex;
+    flex-direction: column;
+  }
+  main .container .input-n4 {
+    margin-left: 0px;
+}
 
   .inp-submit {
     margin-left: 400px;
