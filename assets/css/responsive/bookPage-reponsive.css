@@ -113,7 +113,7 @@
     font-size: 40px;
     font-weight: 700;
     text-align: center;
-    margin: 20% 0  !important;
+    margin: 20% 0 !important;
 
     color: rgba(36, 20, 0, 1);
     display: none;
@@ -158,8 +158,7 @@
     margin-left: 4%;
     font-size: 55px !important;
   }
-  
-  
+
   .icons {
     justify-content: space-between;
   }
@@ -241,7 +240,7 @@
 /* for tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   header {
-    width:1000px;
+    width: 1000px;
     margin-left: 7%;
   }
   body {
