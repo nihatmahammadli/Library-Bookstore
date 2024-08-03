@@ -35,7 +35,7 @@ header nav ul li .search {
   gap: 30px;
 }
 .container .box-1 .inp-search {
-  width: 480px;
+  width: 450px;
   height: 60px;
   outline: none;
   border: 1.5px solid #cecece;
@@ -50,7 +50,7 @@ header nav ul li .search {
   font-weight: 400;
   color: #ffffff;
   border-radius: 5px;
-  width: 480px;
+  width: 450px;
   height: 60px;
   font-size: 25px;
   cursor: pointer;
@@ -69,8 +69,11 @@ header nav ul li .search {
 }
 .container .box-2 p {
   width: 455px;
+  height: 200px;
   line-height: 27.47px;
   font-size: 14px;
+  overflow-y: auto;
+  
 }
 .container .box-2 h5 {
   color: #241400;
