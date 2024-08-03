@@ -218,14 +218,18 @@ body {
     padding-bottom: 290px;
 }
 .book-div img {
-  width: 61%;
+  max-width: 60%;
+  max-height: 130px;
   margin: 10% 2% 0% 18%;
 }
 .book-div h5 {
+  width: 80px;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  margin: 0% 0 3% 6%;
-}
+  /* margin: 0% 0 3% 6%; */
+  margin: auto;
+align-items: center;
+align-self: center !important;}
 .book-div span {
   font-family: "Montserrat", sans-serif;
   font-size: 11px;
