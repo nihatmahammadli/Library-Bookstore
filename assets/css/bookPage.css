@@ -63,11 +63,11 @@ body {
     font-weight: 400;
   }
   
-  header nav ul li .aboutPage {
+  /* header nav ul li .aboutPage {
     color: #e16a00;
     font-weight: 700;
     border-bottom: 2px solid #e16a00;
-  }
+  } */
   header nav ul li a:hover {
     color: #e16a00;
     font-weight: 700;
@@ -119,15 +119,15 @@ body {
     display: flex;
     margin: auto;
     margin-left: 10%;
-    margin-top: 8%;
+    margin-top: 5%;
   }
   .aboutBook {
     width: 55%;
-    margin-left: 10px;
+    margin-left: 24px;
   }
   .btnBack {
     font-family: "Montserrat", sans-serif;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 800;
     color: white;
     background-color: rgba(225, 106, 0, 1);
@@ -137,14 +137,14 @@ body {
     margin-bottom: 6%;
   }
   .year {
-    width: 8%;
+    width: 10%;
     background-color: rgba(47, 128, 237, 1);
     border: none;
     /* padding: 1% 3% 1% 2%; */
     border-radius: 3px;
     font-family: "Montserrat", sans-serif;
     font-size: 10px;
-    padding: 0.5% 0 0.5% 0%;
+    padding: 1% 0 1% 0%;
     color: white;
     font-weight: 900;
     text-align: center;
@@ -156,6 +156,7 @@ body {
   
     color: rgba(36, 20, 0, 1);
     margin: 0;
+    margin: 2% 0;
   }
   .aboutBook h5 {
     font-family: "Montserrat", sans-serif;
@@ -174,20 +175,23 @@ body {
     color: rgba(36, 20, 0, 1);
   }
   .inf-book {
+    width: 620px;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 33px;
     margin: 0;
-    color: rgba(36, 20, 0, 1);
+    font-weight: 300;
+    color: black;
+    /* color: rgba(36, 20, 0, 1); */
   }
   .book-img {
-    width: 55%;
+    width: 25%;
   }
   .book-img img {
     width: 90%;
     margin-left: 1px;
-    /* margin-top: 1%; */
+    margin-top: 18%;
   }
   .book-img-resp {
     display: none;
@@ -219,6 +223,7 @@ body {
     color: white;
     padding: 1px 0 46px;
     align-self: center;
+    cursor: pointer;
   }
   #myBtn svg{
     margin-top: 9%;
@@ -258,7 +263,7 @@ body {
   .sect-2 {
     width: 60%;
     margin-left: 11%;
-    margin-top: 10%;
+    margin-top: 3%;
     margin-bottom: 10%;
   }
   .anonim-word {
