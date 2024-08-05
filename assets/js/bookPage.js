@@ -66,3 +66,24 @@ btnBack.addEventListener("click", function () {
 
 //     }
 // }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const selectedBook = JSON.parse(localStorage.getItem('selectedBook'));
+
+  if (!selectedBook) {
+    console.error("No book selected");
+    return;
+  }
+
+  const bookTitleElement = document.querySelector(".aboutBook h1.h1");
+  const bookAuthorElement = document.querySelector(".aboutBook span");
+  const bookThumbnailElement = document.querySelector(".book-img img");
+  const bookThumbnailElementResp = document.querySelector(".book-img-resp img");
+  const descriptionElement = document.querySelector("#info-book");
+
+  bookTitleElement.textContent = selectedBook.volumeInfo.title || "Title not available";
+  bookAuthorElement.textContent = selectedBook.volumeInfo.authors?.join(', ') || "Author not available";
+  bookThumbnailElement.src = selectedBook.volumeInfo.imageLinks?.thumbnail || "default-thumbnail.jpg";
+  bookThumbnailElementResp.src = selectedBook.volumeInfo.imageLinks?.thumbnail || "default-thumbnail.jpg";
+  descriptionElement.textContent = selectedBook.volumeInfo.description || "Description not available";
+});
