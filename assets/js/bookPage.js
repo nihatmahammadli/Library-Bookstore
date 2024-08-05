@@ -80,10 +80,20 @@ document.addEventListener('DOMContentLoaded', function () {
   const bookThumbnailElement = document.querySelector(".book-img img");
   const bookThumbnailElementResp = document.querySelector(".book-img-resp img");
   const descriptionElement = document.querySelector("#info-book");
+  const descriptionElementResp = document.querySelector(".inf-book-resp");
+  const authorName = document.querySelector(".h1-resp");
+
+
+  const publishedYear = document.querySelector(".year");
+
 
   bookTitleElement.textContent = selectedBook.volumeInfo.title || "Title not available";
   bookAuthorElement.textContent = selectedBook.volumeInfo.authors?.join(', ') || "Author not available";
   bookThumbnailElement.src = selectedBook.volumeInfo.imageLinks?.thumbnail || "default-thumbnail.jpg";
   bookThumbnailElementResp.src = selectedBook.volumeInfo.imageLinks?.thumbnail || "default-thumbnail.jpg";
   descriptionElement.textContent = selectedBook.volumeInfo.description || "Description not available";
+  descriptionElementResp.textContent = selectedBook.volumeInfo.description || "Description not available";
+  publishedYear.textContent = selectedBook.volumeInfo.publishedDate || "Description not available";
+  authorName.textContent = selectedBook.volumeInfo.authors?.join(', ') || "Author not available";
+
 });
