@@ -39,14 +39,15 @@ group.addEventListener("click", function () {
                 class="input-1"
                 type="text"
                 name=""
-                id=""
+                id="input-1"
               />
               <input
                 placeholder="Email"
-                class="input-1"
+                class="input-2"
                 type="email"
                 name=""
-                id=""
+                id="input-2"
+
               />
               <button class="join-button-resp">Join</button>
 
@@ -71,9 +72,16 @@ joinUs.addEventListener("click", function () {
   joinUsback.style.display = "block";
 });
 
-joinButton.addEventListener("click", function () {
-  joinUsdiv.style.display = "none";
-  joinUsback.style.display = "none";
+const input1 = document.getElementById("input1");
+const input2 = document.getElementById("input2");
+
+joinButton.addEventListener("click", function (event) {
+  if (input2.value === "" || input1.value === "") {
+    input2.style.border = "2px solid red";
+    input1.style.border = "2px solid red";
+  } else {
+    alert("Welcome to our community !");
+  }
 });
 
 joinUsback.addEventListener("click", function () {
@@ -81,4 +89,15 @@ joinUsback.addEventListener("click", function () {
   joinUsback.style.display = "none";
 });
 
+const input1resp = document.getElementById("input-1");
+const input2resp = document.getElementById("input-2");
 const joinButtonresp = document.querySelector(".join-button-resp");
+
+// joinButtonresp.addEventListener("click", function (event) {
+// if (input2resp.value === "" || input1resp.value === "") {
+//   input2resp.style.border = "2px solid red";
+//   input1resp.style.border = "2px solid red";
+// } else {
+//   alert("Welcome to our community !");
+// }
+// });
