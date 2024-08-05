@@ -78,46 +78,50 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   
   // Kitapları görüntüleme fonksiyonu
+  // function displayBooks(books) {
+  //   const allBooks1 = document.querySelector(".books"); // `.books` sınıfını kullanın
+  //   const allBooks2 = document.querySelector("#books-2"); // `#books-2` ID'sini kullanın
+  //   const allBooks3 = document.querySelector("#books-3"); // `#books-3` ID'sini kullanın
+  
+  //   if (!allBooks1 || !allBooks2 || !allBooks3) {
+  //     console.error("One or more books elements not found");
+  //     return;
+  //   }
   function displayBooks(books) {
-    const allBooks1 = document.querySelector(".books"); // `.books` sınıfını kullanın
-    const allBooks2 = document.querySelector("#books-2"); // `#books-2` ID'sini kullanın
-    const allBooks3 = document.querySelector("#books-3"); // `#books-3` ID'sini kullanın
+    const allBooks1 = document.querySelector(".books");
+    const allBooks2 = document.querySelector("#books-2");
+    const allBooks3 = document.querySelector("#books-3");
   
     if (!allBooks1 || !allBooks2 || !allBooks3) {
       console.error("One or more books elements not found");
       return;
     }
   
-    allBooks1.innerHTML = ''; // Önceki içeriği temizliyoruz
-    allBooks2.innerHTML = ''; // Önceki içeriği temizliyoruz
-    allBooks3.innerHTML = ''; // Önceki içeriği temizliyoruz
+    allBooks1.innerHTML = '';
+    allBooks2.innerHTML = '';
+    allBooks3.innerHTML = '';
   
-    books.forEach(book => {
+    books.forEach((book, index) => {
       const title = book.volumeInfo.title;
       const thumbnail = book.volumeInfo.imageLinks?.thumbnail || 'default-thumbnail.jpg';
       const author = book.volumeInfo.authors?.join(', ') || 'Unknown Author';
       const infoLink = book.volumeInfo.infoLink || '#';
   
-      // Yeni bir kitap öğesi oluşturuyoruz
       const bookElement = document.createElement("div");
-      bookElement.classList.add("book-div"); // Kitap öğesine "book-div" sınıfını ekliyoruz
+      bookElement.classList.add("book-div");
+      bookElement.setAttribute('data-id', index);
   
       bookElement.innerHTML = `
         <img src="${thumbnail}" alt="Book Image" />
         <div class="book-inf">
           <h5>${title}</h5>
           <span>${author}</span>
-          
-            <button class="read-more-btn">READ MORE</button>
-       
+          <button class="read-more-btn" data-id="${index}">READ MORE</button>
         </div>
       `;
   
-      // İlk div'e ekliyoruz
       allBooks1.appendChild(bookElement.cloneNode(true));
-      // İkinci div'e ekliyoruz
       allBooks2.appendChild(bookElement.cloneNode(true));
-      // Üçüncü div'e ekliyoruz
       allBooks3.appendChild(bookElement.cloneNode(true));
     });
   
@@ -125,6 +129,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const readMoreButtons = document.querySelectorAll(".read-more-btn");
     readMoreButtons.forEach(button => {
       button.addEventListener("click", function () {
+        const bookId = this.getAttribute('data-id');
+        const selectedBook = books[bookId];
+        localStorage.setItem('selectedBook', JSON.stringify(selectedBook));
         window.location.href = "BookPage.html";
       });
     });
