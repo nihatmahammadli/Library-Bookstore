@@ -87,53 +87,54 @@ document.addEventListener('DOMContentLoaded', function() {
   //     console.error("One or more books elements not found");
   //     return;
   //   }
-  function displayBooks(books) {
-    const allBooks1 = document.querySelector(".books");
-    const allBooks2 = document.querySelector("#books-2");
-    const allBooks3 = document.querySelector("#books-3");
-  
-    if (!allBooks1 || !allBooks2 || !allBooks3) {
-      console.error("One or more books elements not found");
-      return;
-    }
-  
-    allBooks1.innerHTML = '';
-    allBooks2.innerHTML = '';
-    allBooks3.innerHTML = '';
-  
-    books.forEach((book, index) => {
-      const title = book.volumeInfo.title;
-      const thumbnail = book.volumeInfo.imageLinks?.thumbnail || 'default-thumbnail.jpg';
-      const author = book.volumeInfo.authors?.join(', ') || 'Unknown Author';
-      const infoLink = book.volumeInfo.infoLink || '#';
-  
-      const bookElement = document.createElement("div");
-      bookElement.classList.add("book-div");
-      bookElement.setAttribute('data-id', index);
-  
-      bookElement.innerHTML = `
-        <img src="${thumbnail}" alt="Book Image" />
-        <div class="book-inf">
-          <h5>${title}</h5>
-          <span>${author}</span>
-          <button class="read-more-btn" data-id="${index}">READ MORE</button>
-        </div>
-      `;
-  
-      allBooks1.appendChild(bookElement.cloneNode(true));
-      allBooks2.appendChild(bookElement.cloneNode(true));
-      allBooks3.appendChild(bookElement.cloneNode(true));
-    });
-  
-    // "READ MORE" düğmelerini seç ve olay dinleyicisi ekle
-    const readMoreButtons = document.querySelectorAll(".read-more-btn");
-    readMoreButtons.forEach(button => {
-      button.addEventListener("click", function () {
-        const bookId = this.getAttribute('data-id');
-        const selectedBook = books[bookId];
-        localStorage.setItem('selectedBook', JSON.stringify(selectedBook));
-        window.location.href = "BookPage.html";
-      });
-    });
+  // Kitapları görüntüleme fonksiyonu
+function displayBooks(books) {
+  const allBooks1 = document.querySelector(".books");
+  const allBooks2 = document.querySelector("#books-2");
+  const allBooks3 = document.querySelector("#books-3");
+
+  if (!allBooks1 || !allBooks2 || !allBooks3) {
+    console.error("One or more books elements not found");
+    return;
   }
-  
+
+  allBooks1.innerHTML = '';
+  allBooks2.innerHTML = '';
+  allBooks3.innerHTML = '';
+
+  books.forEach(book => {
+    const title = book.volumeInfo.title;
+    const thumbnail = book.volumeInfo.imageLinks?.thumbnail || 'default-thumbnail.jpg';
+    const author = book.volumeInfo.authors?.join(', ') || 'Unknown Author';
+    const infoLink = book.volumeInfo.infoLink || '#';
+
+    const bookElement = document.createElement("div");
+    bookElement.classList.add("book-div");
+
+    bookElement.innerHTML = `
+      <img src="${thumbnail}" alt="Book Image" />
+      <div class="book-inf">
+          <div class="book-name">
+          <h5>${title}</h5>
+        <span>${author}</span>
+          </div>
+
+        
+        <button class="read-more-btn" data-book='${JSON.stringify(book)}'>READ MORE</button>
+      </div>
+    `;
+
+    allBooks1.appendChild(bookElement.cloneNode(true));
+    allBooks2.appendChild(bookElement.cloneNode(true));
+    allBooks3.appendChild(bookElement.cloneNode(true));
+  });
+
+  const readMoreButtons = document.querySelectorAll(".read-more-btn");
+  readMoreButtons.forEach(button => {
+    button.addEventListener("click", function () {
+      const bookData = JSON.parse(button.getAttribute('data-book'));
+      localStorage.setItem('selectedBook', JSON.stringify(bookData));
+      window.location.href = "BookPage.html";
+    });
+  });
+}

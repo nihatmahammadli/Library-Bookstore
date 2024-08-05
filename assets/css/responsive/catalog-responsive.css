@@ -87,7 +87,7 @@
   }
 
   .head-sect-1 h2 {
-    font-size: 22px;
+    font-size: 38px !important;
     margin: 0 !important;
     display: block !important;
   }
@@ -107,7 +107,14 @@
   }
   .book-div img {
     width: 80% !important;
-    margin: 10% 2% 0% 7%;
+    max-height: 680px !important;
+
+    height: 800px !important;
+    margin: 10% 2% 0% 21%;
+  }
+  .book-name {
+    width: 250px !important;
+    text-align: center;
   }
   .head-sect-1 ul a {
     font-size: 18px;
@@ -122,20 +129,21 @@
     margin-left: 0%;
     box-shadow: none;
     margin-top: 2%;
-    padding-left: 11%;
+    padding-left: 1%;
     padding-top: 0;
   }
   .read-more-btn {
     display: block;
-    margin-left: 0%;
+    margin-left: 6%;
     padding: 5% 24%;
     border-radius: 8px;
     font-size: 28px !important;
   }
   .book-div h5 {
     font-family: "Montserrat", sans-serif;
-    font-size: 19px;
-    margin: 0% 0 3% 27%;
+    font-size: 22px;
+    margin: 0% 0 3% 7%;
+    width: 250px;
   }
   .book-div span {
     font-family: "Montserrat", sans-serif;
@@ -240,14 +248,14 @@
 
   /* ?section 4 */
   .logo-follow {
-    margin-top: 60%;
+    margin-top: 30% !important;
     margin-left: 47%;
     padding-left: 30%;
   }
   .logo-follow h1 {
     width: 600px !important;
     margin-left: 2%;
-    font-size: 40px;
+    font-size: 40px !important;
   }
   .logo-follow {
     margin-top: 60%;
@@ -271,14 +279,18 @@
   }
   .books-sect-1 {
     width: 1100px !important;
-    margin-left: 10%;
+    margin-left: 15%;
   }
   .book-div {
     min-height: 200px !important;
     padding-bottom: 300px;
   }
   .head-sect-1 h2 {
-    font-size: 25px;
+    font-size: 30px;
+  }
+  .h2-sect2 {
+    font-size: 30px;
+    padding-left: 42%;
   }
   .sect-1 {
     width: 100% !important;
@@ -291,9 +303,14 @@
   }
   .book-inf {
     padding-top: 10%;
+    padding-left: 2%;
     box-shadow: none;
     background-color: none !important;
   }
+  .read-more-btn {
+    width: 147px !important;
+  }
+
   .head-sect-1 ul a {
     font-size: 18px;
     justify-content: center;
@@ -307,7 +324,7 @@
   /* ?footer start */
   footer {
     margin-top: 10%;
-    width: 1240px !important;
+    width: 1350px !important;
   }
   footer .all-footer {
     display: flex;
@@ -382,7 +399,8 @@
     padding-left: 30%;
   }
   .logo-follow h1 {
-    width: 400px;
+    width: 490px;
     margin-left: 10%;
+    font-size: 35px !important;
   }
 }
