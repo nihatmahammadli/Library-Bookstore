@@ -16,7 +16,7 @@ group.addEventListener("click", function () {
           <li><a href="./index.html">Home</a></li>
           <li><a href="./catalog.html">Catalog</a></li>
           <li><a href="./about.html">About Store</a></li>
-          <li><a href="./contactUs.html">Contact Us</a></li>
+          <li><a href="./contactus.html">Contact Us</a></li>
           <li><a href="./search.html">Search</a></li>
           <li ><button class = "resp-join-us">Join Us</button></li>
         </ul>
@@ -79,7 +79,9 @@ joinButton.addEventListener("click", function (event) {
   if (input2.value === "" || input1.value === "") {
     input2.style.border = "2px solid red";
     input1.style.border = "2px solid red";
-  } else {
+  } else if (input2.value != "" || input1.value != "") {
+    input2.style.border = "1px solid #cecece";
+    input1.style.border = "1px solid #cecece";
     alert("Welcome to our community !");
   }
 });
