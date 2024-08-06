@@ -73,12 +73,12 @@
     display: block;
     width: 50% !important;
   }
-  .book-img-resp img{
+  .book-img-resp img {
     width: 500px !important;
     /* padding-left: 270px !important; */
     padding-left: 170px !important;
 
-/* margin-left: 40%; */
+    /* margin-left: 40%; */
   }
   .book-img {
     display: none;
@@ -111,12 +111,11 @@
     font-size: 40px !important;
     font-weight: 700;
     text-align: center;
-
   }
   .aboutBook h5 {
     display: none;
   }
-  
+
   .aboutBook span {
     width: 300px;
     font-family: "Montserrat", sans-serif;
@@ -174,8 +173,8 @@
   .icons img {
     width: 110px;
   }
-   /* ?footer start */
-   footer {
+  /* ?footer start */
+  footer {
     margin-top: 10%;
     width: 767px !important;
   }
@@ -291,7 +290,7 @@
     width: 340px !important;
     margin-left: 230px;
   }
-  .year{
+  .year {
     display: block;
     width: 100px;
   }
@@ -301,7 +300,7 @@
     font-size: 22px;
     margin-right: 100px;
   }
-  
+
   /* ?section 4 */
   .logo-follow {
     margin-top: 10%;
