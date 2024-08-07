@@ -107,10 +107,10 @@
   }
   .book-div img {
     width: 80% !important;
-    max-height: 680px !important;
-
-    height: 800px !important;
-    margin: 10% 2% 0% 21%;
+    /* max-height: 680px !important; */
+min-height: 400px !important;
+    height: 500px !important;
+    margin: 10% 2% 0 21%;
   }
   .book-name {
     width: 250px !important;
@@ -270,7 +270,7 @@
 /* for tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   header {
-    width: 1100px;
+    width: 1200px !important;
     margin-left: 7%;
   }
 
@@ -301,6 +301,16 @@
   .sect-3 {
     width: 100% !important;
   }
+  .book-div img {
+    max-width: 60% !important;
+    /* max-height: 160px !important; */
+    /* height: 200px !important; */
+    height: 130px !important;
+    min-height: 130px !important;
+    max-height: 130px !important;
+
+    margin: 10% 2% 0 22%;
+  }  
   .book-inf {
     padding-top: 10%;
     padding-left: 2%;
@@ -309,6 +319,7 @@
   }
   .read-more-btn {
     width: 147px !important;
+    margin-left: 3%;
   }
 
   .head-sect-1 ul a {

@@ -223,24 +223,28 @@ body {
   /* min-width: 200px; /* Kitapların minimum genişliği */
   /* margin-right: 16px; Kitaplar arasında boşluk */
   /* min-height: 200px !important; */
-    padding-bottom: 290px;
+  padding-bottom: 290px;
 }
 .book-div img {
   max-width: 60% !important;
   max-height: 150px;
-  margin: 10% 2% 0% 20%;
+  height: 150px !important;
+
+  margin: 10% 2% 0% 22%;
 }
 .book-div h5 {
-  width: 80px;
+  /* width: 120px; */
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   /* margin: 0% 0 3% 6%; */
   /* margin: auto; */
-align-items: center;
-align-self: center !important;
-text-align: center !important;
+  align-items: center;
+  align-self: center !important;
+  text-align: center !important;
 }
 .book-div span {
+  width: 150px !important;
+
   font-family: "Montserrat", sans-serif;
   font-size: 11px;
   font-weight: 400;
@@ -258,7 +262,7 @@ text-align: center !important;
   border-radius: 3px;
   margin-top: 4%;
   align-self: center;
-  margin-left: 3%;
+  margin-left: 9%;
   margin-right: 3%;
   margin-bottom: 25%;
 }
@@ -266,7 +270,7 @@ text-align: center !important;
   /* margin-left: 15%; */
   /* margin-top: 21%; */
   padding-top: 4%;
-  padding-left: 10%;
+  padding-left: 0%;
   padding-bottom: 5%;
   align-items: right;
   height: 103px;
@@ -274,16 +278,16 @@ text-align: center !important;
   /* background-color: rgba(255, 255, 255, 1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
   box-shadow: none;
-background-color: none !important;
-align-items: center;
+  background-color: none !important;
+  align-items: center;
 }
 /*  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .books {
   margin-left: 0;
   height: 600px;
 }
-.book-name{
-  width: 100px;
+.book-name {
+  width: 160px;
   margin: auto;
   text-align: center;
 }

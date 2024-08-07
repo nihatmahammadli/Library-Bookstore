@@ -60,34 +60,24 @@ document.addEventListener('DOMContentLoaded', function() {
   
   const API_KEY = "AIzaSyBAe_MuxIPVzIqg03Sianpb-FQ26qVAelQ";
   
-  // API çağrısı
-  fetch(`https://www.googleapis.com/books/v1/volumes?q=book&key=${API_KEY}`)
-    .then((response) => {
-      if (!response.ok) {
-        console.log(`API request failed with status ${response.status}: ${response.statusText}`);
-        return;
-      }
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data);
-      displayBooks(data.items); // Veriyi displayBooks fonksiyonuna geçiriyoruz
-    })
-    .catch((err) => {
-      console.log("Error occurred:", err.message);
-    });
+// API çağrısı
+fetch(`https://www.googleapis.com/books/v1/volumes?q=book&maxResults=30&key=${API_KEY}`)
+  .then((response) => {
+    if (!response.ok) {
+      console.log(`API request failed with status ${response.status}: ${response.statusText}`);
+      return;
+    }
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+    displayBooks(data.items); // Veriyi displayBooks fonksiyonuna geçiriyoruz
+  })
+  .catch((err) => {
+    console.log("Error occurred:", err.message);
+  });
   
-  // Kitapları görüntüleme fonksiyonu
-  // function displayBooks(books) {
-  //   const allBooks1 = document.querySelector(".books"); // `.books` sınıfını kullanın
-  //   const allBooks2 = document.querySelector("#books-2"); // `#books-2` ID'sini kullanın
-  //   const allBooks3 = document.querySelector("#books-3"); // `#books-3` ID'sini kullanın
-  
-  //   if (!allBooks1 || !allBooks2 || !allBooks3) {
-  //     console.error("One or more books elements not found");
-  //     return;
-  //   }
-  // Kitapları görüntüleme fonksiyonu
+// Kitapları görüntüleme fonksiyonu
 function displayBooks(books) {
   const allBooks1 = document.querySelector(".books");
   const allBooks2 = document.querySelector("#books-2");
@@ -102,7 +92,7 @@ function displayBooks(books) {
   allBooks2.innerHTML = '';
   allBooks3.innerHTML = '';
 
-  books.forEach(book => {
+  books.forEach((book, index) => {
     const title = book.volumeInfo.title;
     const thumbnail = book.volumeInfo.imageLinks?.thumbnail || 'default-thumbnail.jpg';
     const author = book.volumeInfo.authors?.join(', ') || 'Unknown Author';
@@ -125,8 +115,12 @@ function displayBooks(books) {
     `;
 
     allBooks1.appendChild(bookElement.cloneNode(true));
-    allBooks2.appendChild(bookElement.cloneNode(true));
-    allBooks3.appendChild(bookElement.cloneNode(true));
+
+    if (index > 15) {
+      allBooks2.appendChild(bookElement.cloneNode(true));
+    } if (index < 15) {
+      allBooks3.appendChild(bookElement.cloneNode(true));
+    }
   });
 
   const readMoreButtons = document.querySelectorAll(".read-more-btn");
