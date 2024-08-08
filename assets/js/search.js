@@ -23,9 +23,11 @@ async function fetchBooks() {
             books = data.items;
             if (books && books.length > 0) {
                 await displayBooks(); 
+                showArrows();
             } else {
-                console.log("Kitap bulunamadı");
+                console.log("Kitap tapılmaı");
                 carousel.innerHTML = "<p>The book you were looking for was not found.</p>";
+                hideArrows();
             }
         }
     } catch (err) {
@@ -79,6 +81,13 @@ function showBook(index) {
 
 searchBtn.addEventListener("click", fetchBooks);
 
+searchInp.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+        e.preventDefault(); // Enter basıldığında formun avtomatik olaraq göndərilməsinin qarşısını almaq üçün
+        fetchBooks(); // Axtarış funksiyasını işə salır
+    }
+});
+
 nextArrow.addEventListener("click", () => {
     if (books.length > 0) {
         currentIndex = (currentIndex + 1) % books.length;
@@ -100,7 +109,10 @@ function showArrows() {
     prevArrow.style.display = 'block';
     nextArrow.style.display = 'block';
   }
-  
+  function hideArrows() {
+    prevArrow.style.display = 'none';
+    nextArrow.style.display = 'none';
+}
  
   searchBtn.addEventListener('click', function() {
     showArrows();
