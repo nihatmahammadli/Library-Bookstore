@@ -193,6 +193,15 @@ body {
   font-weight: 900;
   padding-left: 40%;
 }
+.h2-sect3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  padding-left: 40%;
+}
+.h2-sect2-resp {
+display: none;
+}
 .head-sect-1 ul {
   list-style: none;
   text-decoration: none;

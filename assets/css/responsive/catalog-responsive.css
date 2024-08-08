@@ -184,7 +184,7 @@
   .book-div img {
     width: 80% !important;
     /* max-height: 680px !important; */
-min-height: 400px !important;
+    min-height: 400px !important;
     height: 500px !important;
     margin: 10% 2% 0 21%;
   }
@@ -250,6 +250,7 @@ min-height: 400px !important;
     padding-top: 20%;
     font-size: 35px !important;
   }
+ 
   /* ?footer start */
   footer {
     margin-top: 10%;
@@ -368,6 +369,7 @@ min-height: 400px !important;
     font-size: 30px;
     padding-left: 45%;
   }
+
   .sect-1 {
     width: 100% !important;
   }
@@ -386,7 +388,7 @@ min-height: 400px !important;
     max-height: 130px !important;
 
     margin: 10% 2% 0 22%;
-  }  
+  }
   .book-inf {
     padding-top: 10%;
     padding-left: 2%;

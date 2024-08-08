@@ -1,70 +1,74 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const prevArrow = document.querySelector("#prev-arrow");
-    const nextArrow = document.querySelector("#next-arrow");
-    const bookSection = document.querySelector(".books");
-  
-    prevArrow.addEventListener('click', function() {
-      bookSection.scrollBy({
-        left: -200, // Sola kaydırma mesafesi (px cinsinden)
-        behavior: 'smooth'
-      });
-    });
-  
-    nextArrow.addEventListener('click', function() {
-      bookSection.scrollBy({
-        left: 200, // Sağa kaydırma mesafesi (px cinsinden)
-        behavior: 'smooth'
-      });
+document.addEventListener("DOMContentLoaded", function () {
+  const prevArrow = document.querySelector("#prev-arrow");
+  const nextArrow = document.querySelector("#next-arrow");
+  const bookSection = document.querySelector(".books");
+
+  prevArrow.addEventListener("click", function () {
+    bookSection.scrollBy({
+      left: -200, // Sola kaydırma mesafesi (px cinsinden)
+      behavior: "smooth",
     });
   });
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    const prevArrow2 = document.querySelector("#prev-arrow-2");
-    const nextArrow2 = document.querySelector("#next-arrow-2");
-    const bookSection2 = document.querySelector("#books-2");
-  
-    prevArrow2.addEventListener('click', function() {
-      bookSection2.scrollBy({
-        left: -200, // Sola kaydırma mesafesi (px cinsinden)
-        behavior: 'smooth'
-      });
-    });
-  
-    nextArrow2.addEventListener('click', function() {
-      bookSection2.scrollBy({
-        left: 200, // Sağa kaydırma mesafesi (px cinsinden)
-        behavior: 'smooth'
-      });
+
+  nextArrow.addEventListener("click", function () {
+    bookSection.scrollBy({
+      left: 200, // Sağa kaydırma mesafesi (px cinsinden)
+      behavior: "smooth",
     });
   });
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    const prevArrow3 = document.querySelector("#prev-arrow-3");
-    const nextArrow3 = document.querySelector("#next-arrow-3");
-    const bookSection3 = document.querySelector("#books-3");
-  
-    prevArrow3.addEventListener('click', function() {
-      bookSection3.scrollBy({
-        left: -200, // Sola kaydırma mesafesi (px cinsinden)
-        behavior: 'smooth'
-      });
-    });
-  
-    nextArrow3.addEventListener('click', function() {
-      bookSection3.scrollBy({
-        left: 200, // Sağa kaydırma mesafesi (px cinsinden)
-        behavior: 'smooth'
-      });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const prevArrow2 = document.querySelector("#prev-arrow-2");
+  const nextArrow2 = document.querySelector("#next-arrow-2");
+  const bookSection2 = document.querySelector("#books-2");
+
+  prevArrow2.addEventListener("click", function () {
+    bookSection2.scrollBy({
+      left: -200, // Sola kaydırma mesafesi (px cinsinden)
+      behavior: "smooth",
     });
   });
-  
-  const API_KEY = "AIzaSyBAe_MuxIPVzIqg03Sianpb-FQ26qVAelQ";
-  
+
+  nextArrow2.addEventListener("click", function () {
+    bookSection2.scrollBy({
+      left: 200, // Sağa kaydırma mesafesi (px cinsinden)
+      behavior: "smooth",
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const prevArrow3 = document.querySelector("#prev-arrow-3");
+  const nextArrow3 = document.querySelector("#next-arrow-3");
+  const bookSection3 = document.querySelector("#books-3");
+
+  prevArrow3.addEventListener("click", function () {
+    bookSection3.scrollBy({
+      left: -200, // Sola kaydırma mesafesi (px cinsinden)
+      behavior: "smooth",
+    });
+  });
+
+  nextArrow3.addEventListener("click", function () {
+    bookSection3.scrollBy({
+      left: 200, // Sağa kaydırma mesafesi (px cinsinden)
+      behavior: "smooth",
+    });
+  });
+});
+
+const API_KEY = "AIzaSyBAe_MuxIPVzIqg03Sianpb-FQ26qVAelQ";
+
 // API çağrısı
-fetch(`https://www.googleapis.com/books/v1/volumes?q=book&maxResults=30&key=${API_KEY}`)
+fetch(
+  `https://www.googleapis.com/books/v1/volumes?q=book&maxResults=30&key=${API_KEY}`
+)
   .then((response) => {
     if (!response.ok) {
-      console.log(`API request failed with status ${response.status}: ${response.statusText}`);
+      console.log(
+        `API request failed with status ${response.status}: ${response.statusText}`
+      );
       return;
     }
     return response.json();
@@ -76,7 +80,7 @@ fetch(`https://www.googleapis.com/books/v1/volumes?q=book&maxResults=30&key=${AP
   .catch((err) => {
     console.log("Error occurred:", err.message);
   });
-  
+
 // Kitapları görüntüleme fonksiyonu
 function displayBooks(books) {
   const allBooks1 = document.querySelector(".books");
@@ -86,18 +90,18 @@ function displayBooks(books) {
   if (!allBooks1 || !allBooks2 || !allBooks3) {
     console.error("One or more books elements not found");
     return;
-    
   }
 
-  allBooks1.innerHTML = '';
-  allBooks2.innerHTML = '';
-  allBooks3.innerHTML = '';
+  allBooks1.innerHTML = "";
+  allBooks2.innerHTML = "";
+  allBooks3.innerHTML = "";
 
   books.forEach((book, index) => {
     const title = book.volumeInfo.title;
-    const thumbnail = book.volumeInfo.imageLinks?.thumbnail || 'default-thumbnail.jpg';
-    const author = book.volumeInfo.authors?.join(', ') || 'Unknown Author';
-    const infoLink = book.volumeInfo.infoLink || '#';
+    const thumbnail =
+      book.volumeInfo.imageLinks?.thumbnail || "default-thumbnail.jpg";
+    const author = book.volumeInfo.authors?.join(", ") || "Unknown Author";
+    const infoLink = book.volumeInfo.infoLink || "#";
 
     const bookElement = document.createElement("div");
     bookElement.classList.add("book-div");
@@ -111,26 +115,27 @@ function displayBooks(books) {
           </div>
 
         
-        <button class="read-more-btn" data-book='${JSON.stringify(book)}'>READ MORE</button>
+        <button class="read-more-btn" data-book='${JSON.stringify(
+          book
+        )}'>READ MORE</button>
       </div>
     `;
-    console.log(book.volumeInfo);
-
 
     allBooks1.appendChild(bookElement.cloneNode(true));
 
     if (index > 15) {
       allBooks2.appendChild(bookElement.cloneNode(true));
-    } if (index > 10) {
+    }
+    if (index > 10) {
       allBooks3.appendChild(bookElement.cloneNode(true));
     }
   });
 
   const readMoreButtons = document.querySelectorAll(".read-more-btn");
-  readMoreButtons.forEach(button => {
+  readMoreButtons.forEach((button) => {
     button.addEventListener("click", function () {
-      const bookData = JSON.parse(button.getAttribute('data-book'));
-      localStorage.setItem('selectedBook', JSON.stringify(bookData));
+      const bookData = JSON.parse(button.getAttribute("data-book"));
+      localStorage.setItem("selectedBook", JSON.stringify(bookData));
       window.location.href = "BookPage.html";
     });
   });
