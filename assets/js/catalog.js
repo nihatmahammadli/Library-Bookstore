@@ -86,6 +86,7 @@ function displayBooks(books) {
   if (!allBooks1 || !allBooks2 || !allBooks3) {
     console.error("One or more books elements not found");
     return;
+    
   }
 
   allBooks1.innerHTML = '';
@@ -113,12 +114,14 @@ function displayBooks(books) {
         <button class="read-more-btn" data-book='${JSON.stringify(book)}'>READ MORE</button>
       </div>
     `;
+    console.log(book.volumeInfo);
+
 
     allBooks1.appendChild(bookElement.cloneNode(true));
 
     if (index > 15) {
       allBooks2.appendChild(bookElement.cloneNode(true));
-    } if (index < 15) {
+    } if (index > 10) {
       allBooks3.appendChild(bookElement.cloneNode(true));
     }
   });

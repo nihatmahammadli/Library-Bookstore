@@ -70,13 +70,82 @@
     margin-left: 0;
     padding-left: 0px !important;
     justify-content: start;
+    font-size: 23px !important;
   }
   .head-sect-1 ul {
     margin-left: 0;
     padding-left: 0px !important;
     justify-content: start;
   }
-
+  .resp-join-us {
+    color: #f2f2f2;
+    text-align: right;
+    font-size: 22px;
+    font-family: Montserrat;
+    font-weight: 400;
+    position: fixed;
+    right: 20px;
+    line-height: 196.187%;
+    top: 437px;
+  }
+  .join-us-div-resp {
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    margin-left: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .join-us-div-resp input {
+    font-family: "Crimson Text";
+    color: #797667;
+    font-weight: 400;
+    font-size: 30px;
+    width: 462.6px;
+    height: 79.232px;
+    border: 1px solid #cecece;
+    background: #fff;
+    padding-left: 30px;
+    outline: none;
+    margin-bottom: 50px;
+  }
+  .join-us-div-resp h1 {
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .join-us-div-resp .innput-2 {
+    display: block;
+  }
+  .join-us-div-resp .join-button-resp {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    background: #e16a00;
+    color: #fff;
+    text-align: center;
+    font-family: "Crimson Text";
+    font-size: 30px;
+    font-weight: 700;
+    width: 463px;
+    outline: none;
+    height: 70px;
+    margin-top: 18px;
+    cursor: pointer;
+  }
+  .resp-join-us {
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 28px;
+  }
   .sect-1 {
     width: 95%;
     margin-top: 17%;
@@ -84,6 +153,12 @@
   .head-sect-1 {
     width: 700px;
     flex-direction: column;
+  }
+  .books-sect-1 {
+    height: 800px !important;
+  }
+  .books {
+    gap: 20px !important;
   }
 
   .head-sect-1 h2 {
@@ -95,14 +170,15 @@
     width: 700px !important;
     display: flex;
     flex-wrap: wrap;
-    height: 700px;
+    height: 600px;
     margin-left: 10%;
   }
   .book-div {
     min-width: 70%;
     /* min-height: 950px; */
-    height: 770px !important;
-    margin-left: 5%;
+    height: 700px !important;
+    margin-left: 12%;
+    margin-top: 6%;
     /* background-color: aquamarine; */
   }
   .book-div img {
@@ -113,7 +189,7 @@ min-height: 400px !important;
     margin: 10% 2% 0 21%;
   }
   .book-name {
-    width: 250px !important;
+    width: 300px !important;
     text-align: center;
   }
   .head-sect-1 ul a {
@@ -128,7 +204,7 @@ min-height: 400px !important;
     min-width: 50%;
     margin-left: 0%;
     box-shadow: none;
-    margin-top: 2%;
+    margin-top: 7%;
     padding-left: 1%;
     padding-top: 0;
   }
@@ -163,14 +239,14 @@ min-height: 400px !important;
 
   .books {
     min-height: 800px;
-    height: 730px !important;
+    height: 630px !important;
     margin-bottom: 20% !important;
     background-color: none;
     gap: 90px;
   }
 
   .h2-sect2 {
-    padding-left: 32%;
+    padding-left: 35%;
     padding-top: 20%;
     font-size: 35px !important;
   }
@@ -290,7 +366,7 @@ min-height: 400px !important;
   }
   .h2-sect2 {
     font-size: 30px;
-    padding-left: 42%;
+    padding-left: 45%;
   }
   .sect-1 {
     width: 100% !important;
@@ -406,7 +482,7 @@ min-height: 400px !important;
   /* ?section 4 */
   .logo-follow {
     margin-top: 10%;
-    margin-left: 40%;
+    margin-left: 49%;
     padding-left: 30%;
   }
   .logo-follow h1 {
