@@ -7,6 +7,18 @@ const myList = document.querySelector(".comments");
 let userList = [];
 let getUserList;
 
+// Kommentin yazıldığı tarixi almaq
+const currentDate = new Date();
+
+// Tarixi formatlamaq
+const formattedDate = currentDate.toLocaleDateString('tr-TR', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+
+
 function addcomment() {
   myList.innerHTML = "";
   getUserList = JSON.parse(localStorage.getItem("userList")) || [];
@@ -19,7 +31,7 @@ function addcomment() {
       myComment.setAttribute("class", "comment");
 
       let pElement = document.createElement("p");
-      pElement.innerHTML = `<span class="span-comment"><p class="anonim-word">anonim</p> ${getUserList[i]}</span>`;
+      pElement.innerHTML = `<span class="span-comment"><div class="user-comment"><p class="anonim-word">anonim    </p> ${formattedDate}</div>  ${getUserList[i]}</span>`;
       myComment.appendChild(pElement);
 
       myList.appendChild(myComment);
@@ -89,7 +101,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   bookTitleElement.textContent = selectedBook.volumeInfo.title || "Title not available";
   bookAuthorElement.textContent = selectedBook.volumeInfo.authors?.join(', ') || "Author not available";
-  bookThumbnailElement.src = selectedBook.volumeInfo.imageLinks?.thumbnail || "default-thumbnail.jpg";
+  bookThumbnailElement.src = selectedBook.volumeInfo.imageLinks?.thumbnail
+  || "default-thumbnail.jpg";
   bookThumbnailElementResp.src = selectedBook.volumeInfo.imageLinks?.thumbnail || "default-thumbnail.jpg";
   descriptionElement.textContent = selectedBook.volumeInfo.description || "Description not available";
   descriptionElementResp.textContent = selectedBook.volumeInfo.description || "Description not available";
@@ -97,3 +110,4 @@ document.addEventListener('DOMContentLoaded', function () {
   authorName.textContent = selectedBook.volumeInfo.authors?.join(', ') || "Author not available";
 
 });
+

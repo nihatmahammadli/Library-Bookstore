@@ -43,7 +43,7 @@
     color: #f2f2f2;
     text-align: right;
     font-size: 22px;
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     position: fixed;
     right: 20px;
@@ -141,13 +141,13 @@
   .inf-book-resp {
     display: block;
     margin-top: 10% !important;
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     font-size: 39px;
     text-align: center;
-    font-weight: 100;
+    font-weight: 300;
     /* line-height: 33px; */
     margin: 0;
-    color: rgba(36, 20, 0, 1);
+    color: rgb(0, 0, 0);
     width: 550px !important;
     margin-left: 50px;
   }
@@ -202,7 +202,7 @@
     gap: 12px;
   }
   footer .all-footer .information .footer-nav a {
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 18px;
     color: #f2f2f2ea;
@@ -220,7 +220,7 @@
     margin-left: 4%;
     color: #ffffffcb;
     text-align: center;
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 10px;
@@ -230,7 +230,7 @@
     margin-left: 4%;
     color: #ffffffcb;
     text-align: center;
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 400;
     padding-bottom: 10px;
@@ -264,6 +264,75 @@
   .logo-follow h1 {
     width: 440px;
     margin-left: 14%;
+  }
+  .resp-join-us {
+    color: #f2f2f2;
+    text-align: right;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    position: fixed;
+    right: 20px;
+    line-height: 196.187%;
+    top: 437px;
+  }
+  .join-us-div-resp {
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    margin-left: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .join-us-div-resp input {
+    font-family: "Crimson Text";
+    color: #797667;
+    font-weight: 400;
+    font-size: 30px;
+    width: 462.6px;
+    height: 79.232px;
+    border: 1px solid #cecece;
+    background: #fff;
+    padding-left: 30px;
+    outline: none;
+    margin-bottom: 50px;
+  }
+  .join-us-div-resp h1 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .join-us-div-resp .innput-2 {
+    display: block;
+  }
+  .join-us-div-resp .join-button-resp {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    background: #e16a00;
+    color: #fff;
+    text-align: center;
+    font-family: "Crimson Text";
+    font-size: 30px;
+    font-weight: 700;
+    width: 463px;
+    outline: none;
+    height: 70px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .resp-join-us {
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 28px;
   }
 }
 /* for tablets */
