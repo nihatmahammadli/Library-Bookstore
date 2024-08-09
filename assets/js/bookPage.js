@@ -116,6 +116,5 @@ document.addEventListener('DOMContentLoaded', function () {
   descriptionElementResp.textContent = selectedBook.volumeInfo.description || "Description not available";
   publishedYear.textContent = selectedBook.volumeInfo.publishedDate || "Description not available";
   authorName.textContent = selectedBook.volumeInfo.authors?.join(', ') || "Author not available";
-
 });
 
