@@ -425,7 +425,7 @@
   }
   footer .last-text-2 {
     display: block !important;
-    margin-left: 4%;
+    margin-left: 0%;
     color: #ffffffcb;
     text-align: center;
     font-family: Montserrat;
@@ -435,7 +435,7 @@
   }
   footer .last-text-3 {
     display: block !important;
-    margin-left: 4%;
+    margin-left: 0%;
     color: #ffffffcb;
     text-align: center;
     font-family: Montserrat;
@@ -444,12 +444,22 @@
     padding-bottom: 10px;
   }
   footer .line-2 {
-    display: block !important;
     width: 440px;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.59);
     margin: auto;
     margin-bottom: 10px;
     margin-left: 22%;
+    display: none !important;
+
+  }
+  .line-2{
+    display: none !important;
+  }
+  .inf-book{
+    margin-top: 5%;
+  }
+  .book-img{
+    margin-left: 6%;
   }
 }
