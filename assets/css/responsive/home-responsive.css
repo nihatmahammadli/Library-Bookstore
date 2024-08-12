@@ -299,110 +299,12 @@
     font-size: 28px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  body {
-    width: 100% !important;
-  }
-  header {
-    width: 90% !important;
-  }
-  main {
-    width: 95% !important;
-    margin: auto;
-  }
-  main .sec-1 .img-div img {
-    width: 500px;
-    height: 400px;
-  }
-  main .sec-4 p {
-    width: 100% !important;
-  }
-  main .sec-3 .all-texts h2 {
-    font-size: 30px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-  header {
-    width: 1100px;
-    margin-left: 7%;
-  }
-
-  header ul a {
-    font-size: 20px;
-  }
-  main {
-    margin: auto;
-  }
-
+@media only screen and (min-width: 768px) and (max-width: 1349px) {
   footer {
-    margin-top: 10%;
-    width: 1350px !important;
+    width: 1424px !important;
   }
-  footer .all-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  footer .all-footer .information {
-    display: block;
-  }
-  footer .all-footer .information h3,
-  p {
-    display: none;
-  }
-  footer .all-footer .information .footer-nav {
-    display: block !important;
-    margin-left: 90px;
-  }
-  footer .all-footer .information .footer-nav ul {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    gap: 12px;
-  }
-  footer .all-footer .information .footer-nav a {
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 18px;
-    color: #f2f2f2ea;
-  }
-  footer .all-footer .logo-footer .book-store-2 {
-    display: block;
-    font-size: 18px;
-  }
-  footer .all-footer .logo-footer h3 {
-    font-size: 20px;
-    margin-left: 4px;
-  }
-  footer .last-text-2 {
-    display: block !important;
-    margin-left: 4%;
-    color: #ffffffcb;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 10px;
-  }
-  footer .last-text-3 {
-    display: block !important;
-    margin-left: 4%;
-    color: #ffffffcb;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    padding-bottom: 10px;
-  }
-  footer .line-2 {
-    display: block !important;
-    width: 440px;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.59);
-    margin: auto;
-    margin-bottom: 10px;
-    margin-left: 22%;
+  .sec-2,
+  .sec-3 {
+    margin-left: 10% !important;
   }
 }
