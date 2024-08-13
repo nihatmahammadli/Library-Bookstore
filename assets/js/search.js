@@ -25,7 +25,7 @@ async function fetchBooks() {
                 await displayBooks(); 
                 showArrows();
             } else {
-                console.log("Kitap tapılmaı");
+                console.log("Kitap tapılmadı");
                 carousel.innerHTML = "<p>The book you were looking for was not found.</p>";
                 hideArrows();
             }
@@ -58,7 +58,7 @@ async function displayBooks() {
 
         bookElement.innerHTML = `
             <div class="box-2">
-                <img src="${thumbnail}" alt="Kitap Görseli" />
+                <img src="${thumbnail}" alt="Book Picture" />
                 <div class="book-info">
                     <h5>${title}</h5>
                     <h6>${authors}</h6>
@@ -83,8 +83,7 @@ searchBtn.addEventListener("click", fetchBooks);
 
 searchInp.addEventListener("keydown", function(e) {
     if (e.key === "Enter") {
-        e.preventDefault(); // Enter basıldığında formun avtomatik olaraq göndərilməsinin qarşısını almaq üçün
-        fetchBooks(); // Axtarış funksiyasını işə salır
+        fetchBooks(); 
     }
 });
 
@@ -116,6 +115,5 @@ function showArrows() {
  
   searchBtn.addEventListener('click', function() {
     showArrows();
-    data(); 
   });
   
