@@ -38,7 +38,7 @@ function showComment() {
   if (newComment) {
     comments.push(newComment);
     localStorage.setItem("userList", JSON.stringify(comments));
-    myInput.value = ""; // Yorum eklendikten sonra giriş kutusunu temizle
+    myInput.value = ""; // 
     addcomment();
   } else {
     alert("Please enter a comment.");
