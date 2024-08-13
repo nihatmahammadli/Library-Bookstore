@@ -28,7 +28,7 @@ header nav ul li .about {
   font-size: 36px;
   margin-bottom: 30px;
   margin-top: 70px;
-  margin-left: 140px;
+  margin-left: 118px;
 }
 
 .text-img {
@@ -36,7 +36,7 @@ header nav ul li .about {
   justify-content: center;
   font-family: Montserrat;
   gap: 50px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 .text-img p {
