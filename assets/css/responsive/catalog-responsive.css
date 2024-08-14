@@ -238,7 +238,7 @@
   }
 
   .books {
-    min-height: 800px;
+    min-height: 900px;
     height: 630px !important;
     margin-bottom: 20% !important;
     background-color: none;
@@ -454,7 +454,7 @@
   }
   footer .last-text-2 {
     display: block !important;
-    margin-left: 4%;
+    margin-left: 0%;
     color: #ffffffcb;
     text-align: center;
     font-family: Montserrat;
@@ -464,7 +464,7 @@
   }
   footer .last-text-3 {
     display: block !important;
-    margin-left: 4%;
+    margin-left: 0%;
     color: #ffffffcb;
     text-align: center;
     font-family: Montserrat;
