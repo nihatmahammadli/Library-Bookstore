@@ -7,24 +7,6 @@ const myList = document.querySelector(".comments");
 let userList = [];
 let getUserList;
 
-const commentDate = new Date('2024-08-09T10:30:00');
-
-const currentDate = new Date();
-
-const timeDifference = currentDate - commentDate;
-
-const seconds = Math.floor((timeDifference / 1000) % 60);
-const minutes = Math.floor((timeDifference / (1000 * 60)) % 60);
-const hours = Math.floor((timeDifference / (1000 * 60 * 60)) % 24);
-const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-
-const displayTime = days > 0 ? `${days} days ago` : 
-                    hours > 0 ? `${hours} hours ago` : 
-                    minutes > 0 ? `${minutes} minutes ago` : 
-                    `${seconds} seconds ago`;
-
-console.log(displayTime);
-
 
 ///////////////////////////////////////////////////////////
 function addcomment() {
@@ -39,7 +21,7 @@ function addcomment() {
       myComment.setAttribute("class", "comment");
 
       let pElement = document.createElement("p");
-      pElement.innerHTML = `<span class="span-comment"><div class="user-comment"><p class="anonim-word">anonim    </p> ${displayTime}</div>  ${getUserList[i]}</span>`;
+      pElement.innerHTML = `<span class="span-comment"><div class="user-comment"><p class="anonim-word">anonim    </p></div>  ${getUserList[i]}</span>`;
       myComment.appendChild(pElement);
 
       myList.appendChild(myComment);
@@ -56,7 +38,7 @@ function showComment() {
   if (newComment) {
     comments.push(newComment);
     localStorage.setItem("userList", JSON.stringify(comments));
-    myInput.value = ""; // Yorum eklendikten sonra giriş kutusunu temizle
+    myInput.value = ""; // 
     addcomment();
   } else {
     alert("Please enter a comment.");
